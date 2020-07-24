@@ -1,0 +1,330 @@
+$primary-text-color: #000;
+$primary-color: #0788E9;
+$secondary-text-color: #8A8A8A;
+$secondary-color: #52CFA1;
+$light-color: #E9E9E9;
+$gradient-color: linear-gradient(45deg , #0788E9 65%, #23F8DE);
+$main-navbar-color: white;
+$main-light-color: #333;
+$navbar-height: 50px;
+$navbar-logo-width: 30px;
+
+
+$website-width: 93%;
+
+// Utilities
+.btn{
+   background: $gradient-color;
+   color: white;
+   text-align: center;
+
+   &-rounded{
+      margin-top: 1rem;
+      padding: .7rem;
+      font-size: 1.5rem;
+      border-radius: 120px;
+   }
+
+}
+
+.container{
+   width: $website-width;
+   margin: 0 auto;
+}
+
+.hidden{
+   display: none;
+}
+
+.lead{
+   padding: 1rem 0;
+}
+
+input{
+
+   &:focus{
+      outline: none;
+   }
+}
+
+p{
+   font-family: light-font;
+}
+
+select{
+   
+   option{
+      background-color: #f4f4f4;
+      color: $main-light-color;
+   }
+
+   &:focus{
+      outline: none;
+   }
+
+
+}
+
+// General Styling
+*{
+   color: black;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: regular-font;
+}
+
+a{
+   text-decoration: none;
+   color: inherit;
+}
+
+h4{
+   font-family: light-font;
+}
+
+// Navbar
+#navbar-box{
+   position: fixed;
+   height: $navbar-height;
+   top: 0;
+   width: 100%;
+   z-index: 20;
+   background: white;
+
+   .navbar{
+      height: $navbar-height;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-logo{
+         width: 110px;
+         height: $navbar-logo-width;
+         background: url(../assets/icons/main-logo.png) center center /contain no-repeat;
+      }
+
+      &-items{
+         display: none;
+      }
+
+      .burger-logo{
+
+         &-line{
+            height: 2px;
+            width: 20px;
+            background: $main-light-color;
+
+            &:nth-child(2){
+               margin: 3px 0;
+            }
+         }
+      }
+   }
+
+   .kp-sidemenu-box {
+      opacity: 0;
+      visibility: hidden;
+      
+      display: flex;
+      justify-content: center;
+      
+      position: fixed;
+      top: 50px;
+      left: 0;
+      
+      width: 100vw;
+      height: calc( 100vh - 50px );
+      
+      background-color: rgba( 255, 255, 255, 1 );
+      transform: translate3d( 0, -18px, 0 );
+      transition: all .36s ease-out;
+      
+      z-index: 9999;
+      
+         .kp-sidemenu {
+            width: $website-width;
+            height: calc( 100% - 48px );
+            font-family: medium-font;
+            padding: 24px 0;
+   
+            .kp-sidemenu-item-box {
+               display: flex;
+               flex-direction: column;
+               justify-items: center;
+               align-items: center;
+               margin-bottom: 48px;
+   
+               .kp-sidemenu-item {
+                  display: block;
+                  font-size: 24px;
+                  margin-top: 14px;
+                  color: $primary-text-color;
+               }
+            }
+         }
+   }
+   
+   &.kp-sidemenu-opened .kp-sidemenu-box {
+      opacity: 1;
+      visibility: visible;
+      transform: translate3d( 0, 0, 0 );
+   }
+}
+
+// Home
+#home{
+
+   &-a{
+      margin-top: $navbar-height;
+
+      .container{
+
+         .search-box{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: $navbar-height + 20px;
+            left: 30px;
+            height: 535px;
+            width: 83%;
+            padding: 1rem;
+            background: rgba($color: #ffffff, $alpha: .85);
+            backdrop-filter: saturate(180%) blur(20px);
+            border-radius: 1rem;
+            z-index: 1;
+
+            .search-box-container{
+               overflow: auto;
+               display: flex;
+               flex-direction: column;
+               height: 372px;
+
+               .advanced-search{
+                  padding: 20px 0 0;
+                  color: $primary-color;
+                  text-decoration: underline;
+               }
+
+               .property-details{
+                  padding-top: 1.5rem;
+
+                  &:first-child{
+                     padding-top: 0;
+                  }
+   
+                  h4{
+                     margin-bottom: .75rem;
+                  }
+   
+                  .search-options-box{
+                     display: grid;
+                     grid-template-columns: 1fr 1fr;
+                     grid-gap: 10px;
+   
+                     .search-input{
+                        width: 100%;
+                        height: 36px;
+                        font-size: .75rem;
+                        background: none;
+                        border: $secondary-text-color 1px solid;
+                        color: $secondary-text-color;
+
+                        option[disabled] {
+                            display: none;
+                        }
+                     }
+
+                     input{
+                        padding: .3rem;
+                     }
+                  }
+               }
+            }
+
+            .btn{
+
+               img{
+                  transform: translateY(4px);
+               }
+            }
+
+         }
+
+         .hero-img{
+            position: relative;
+            height: 570px;
+            width: 100%;
+            border-radius: 1.3rem;
+            margin-top: $navbar-height ;
+            background: url(../assets/img/main/hero-image.jpg) center right /cover no-repeat;
+
+         }
+      }
+   }
+
+   &-b{
+
+      .container{
+
+         .graphs-container{
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+
+            .graph-info{
+
+               p{
+                  color: $secondary-text-color;
+               }
+
+               h4{
+                  font-size: 1.3rem;
+                  padding-bottom: 1rem;
+               }
+
+               .graph-box{
+                  display: flex;
+                  margin: 2rem 0;
+
+                  .graph-percentages{
+                     display: flex;
+                     justify-content: space-between;
+                     flex-direction: column-reverse;
+                  }
+
+                  .graph{
+                     position: relative;
+                     display: flex;
+                     margin-left: 2rem;
+                     height: 250px;
+                     width: 280;
+
+                     .bar{
+                        width: 1.2rem;
+                        margin-right: .6rem;
+                        height: 100%;
+                        background: $secondary-color;
+                        z-index: 1;
+                     }
+                  }
+                  
+                  .graph-lines{
+                     position: absolute;
+                     left: 73px;
+                     height: 250px;
+                     width: 278px;
+
+                     .dotted-line{
+                        border-top: 1px dotted $light-color;
+                        width: 100%;
+                        height: 20%;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+

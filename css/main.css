@@ -1,0 +1,326 @@
+.btn {
+  background: linear-gradient(45deg, #0788E9 65%, #23F8DE);
+  color: white;
+  text-align: center;
+}
+
+.btn-rounded {
+  margin-top: 1rem;
+  padding: .7rem;
+  font-size: 1.5rem;
+  border-radius: 120px;
+}
+
+.container {
+  width: 93%;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.lead {
+  padding: 1rem 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+p {
+  font-family: light-font;
+}
+
+select option {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+select:focus {
+  outline: none;
+}
+
+* {
+  color: black;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: regular-font;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h4 {
+  font-family: light-font;
+}
+
+#navbar-box {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background: white;
+}
+
+#navbar-box .navbar {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar-box .navbar-logo {
+  width: 110px;
+  height: 30px;
+  background: url(../assets/icons/main-logo.png) center center/contain no-repeat;
+}
+
+#navbar-box .navbar-items {
+  display: none;
+}
+
+#navbar-box .navbar .burger-logo-line {
+  height: 2px;
+  width: 20px;
+  background: #333;
+}
+
+#navbar-box .navbar .burger-logo-line:nth-child(2) {
+  margin: 3px 0;
+}
+
+#navbar-box .kp-sidemenu-box {
+  opacity: 0;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100vw;
+  height: calc( 100vh - 50px);
+  background-color: white;
+  -webkit-transform: translate3d(0, -18px, 0);
+          transform: translate3d(0, -18px, 0);
+  -webkit-transition: all .36s ease-out;
+  transition: all .36s ease-out;
+  z-index: 9999;
+}
+
+#navbar-box .kp-sidemenu-box .kp-sidemenu {
+  width: 93%;
+  height: calc( 100% - 48px);
+  font-family: medium-font;
+  padding: 24px 0;
+}
+
+#navbar-box .kp-sidemenu-box .kp-sidemenu .kp-sidemenu-item-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 48px;
+}
+
+#navbar-box .kp-sidemenu-box .kp-sidemenu .kp-sidemenu-item-box .kp-sidemenu-item {
+  display: block;
+  font-size: 24px;
+  margin-top: 14px;
+  color: #000;
+}
+
+#navbar-box.kp-sidemenu-opened .kp-sidemenu-box {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#home-a {
+  margin-top: 50px;
+}
+
+#home-a .container .search-box {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 70px;
+  left: 30px;
+  height: 535px;
+  width: 83%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px);
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+#home-a .container .search-box .search-box-container {
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 372px;
+}
+
+#home-a .container .search-box .search-box-container .advanced-search {
+  padding: 20px 0 0;
+  color: #0788E9;
+  text-decoration: underline;
+}
+
+#home-a .container .search-box .search-box-container .property-details {
+  padding-top: 1.5rem;
+}
+
+#home-a .container .search-box .search-box-container .property-details:first-child {
+  padding-top: 0;
+}
+
+#home-a .container .search-box .search-box-container .property-details h4 {
+  margin-bottom: .75rem;
+}
+
+#home-a .container .search-box .search-box-container .property-details .search-options-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#home-a .container .search-box .search-box-container .property-details .search-options-box .search-input {
+  width: 100%;
+  height: 36px;
+  font-size: .75rem;
+  background: none;
+  border: #8A8A8A 1px solid;
+  color: #8A8A8A;
+}
+
+#home-a .container .search-box .search-box-container .property-details .search-options-box .search-input option[disabled] {
+  display: none;
+}
+
+#home-a .container .search-box .search-box-container .property-details .search-options-box input {
+  padding: .3rem;
+}
+
+#home-a .container .search-box .btn img {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+#home-a .container .hero-img {
+  position: relative;
+  height: 570px;
+  width: 100%;
+  border-radius: 1.3rem;
+  margin-top: 50px;
+  background: url(../assets/img/main/hero-image.jpg) center right/cover no-repeat;
+}
+
+#home-b .container .graphs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+}
+
+#home-b .container .graphs-container .graph-info p {
+  color: #8A8A8A;
+}
+
+#home-b .container .graphs-container .graph-info h4 {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+#home-b .container .graphs-container .graph-info .graph-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0;
+}
+
+#home-b .container .graphs-container .graph-info .graph-box .graph-percentages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+#home-b .container .graphs-container .graph-info .graph-box .graph {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2rem;
+  height: 250px;
+  width: 280;
+}
+
+#home-b .container .graphs-container .graph-info .graph-box .graph .bar {
+  width: 1.2rem;
+  margin-right: .6rem;
+  height: 100%;
+  background: #52CFA1;
+  z-index: 1;
+}
+
+#home-b .container .graphs-container .graph-info .graph-box .graph-lines {
+  position: absolute;
+  left: 73px;
+  height: 250px;
+  width: 278px;
+}
+
+#home-b .container .graphs-container .graph-info .graph-box .graph-lines .dotted-line {
+  border-top: 1px dotted #E9E9E9;
+  width: 100%;
+  height: 20%;
+}
+/*# sourceMappingURL=main.css.map */

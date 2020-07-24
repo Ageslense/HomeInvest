@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css/main.css">
+   <link rel="stylesheet" href="/css/fonts.css">
+   <link rel="stylesheet" href="/css/index.css">
+   <title>Home Invest</title>
+</head>
+<body>
+
+   <nav id="navbar-box">
+      <div class="container">
+         <div class="navbar">
+            <div class="navbar-logo"></div>
+            <ul class="navbar-items">
+               <a href="index.html" class="navbar-item">Home</a>
+               <a href="properties.html" class="navbar-item">Properties</a>
+               <a href="about.html" class="navbar-item">About</a>
+               <a href="alfred.html" class="navbar-item">A.L.F.R.E.D</a>
+               <a href="contact.html" class="navbar-item">Contact Us</a>
+            </ul>
+            <div class="burger-logo">
+               <div class="burger-logo-line"></div>
+               <div class="burger-logo-line"></div>
+               <div class="burger-logo-line"></div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="kp-sidemenu-box">
+         <div class="kp-sidemenu">
+            <div class="kp-sidemenu-item-box">
+               <a href="index.html" class="kp-sidemenu-item">Home</a>
+               <a href="properties.html" class="kp-sidemenu-item">Properties</a>
+               <a href="about.html" class="kp-sidemenu-item">About</a>
+               <a href="alfred.html" class="kp-sidemenu-item">A.L.F.R.E.D</a>
+               <a href="contact.html" class="kp-sidemenu-item">Contact Us</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+   <!-- Search -->
+   <section id="home-a">
+      <div class="container">
+         <div class="search-box">
+            <h2 class="lead">
+               Search Property
+            </h2>
+            <div class="search-box-container">
+               <div class="property-details">
+                  <h4>Property Details</h4>
+                  <div class="search-options-box">
+                     <select class="search-input" name="min-price" id="min-price">
+                        <option value="" disabled selected>Minimum Price</option>
+                        <option value="0">$0</option>
+                        <option value="100000">$100,000</option>
+                        <option value="200000">$200,000</option>
+                        <option value="300000">$300,000</option>
+                        <option value="1000000">$1,000,000</option>
+                     </select>
+                     <select class="search-input" name="max-price" id="max-price">
+                        <option value="" disabled selected>Maximum Price</option>
+                        <option value="0">$0</option>
+                        <option value="100000">$100,000</option>
+                        <option value="200000">$200,000</option>
+                        <option value="300000">$300,000</option>
+                        <option value="1000000">$1,000,000</option>
+                     </select>
+                     <select class="search-input" name="min-bed" id="min-bed">
+                        <option value="" disabled selected>Minimum Bedrooms</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                     </select>
+                     <select class="search-input" name="max-bed" id="max-bed">
+                        <option value="" disabled selected>Minimum Bathrooms</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                     </select>
+                     <select class="search-input" name="property-type" id="property-type">
+                        <option value="" disabled selected>Property Type</option>
+                        <option value="house">House</option>
+                        <option value="multi-family">Multi-Family</option>
+                        <option value="apartment-condo">Apartment/Condo</option>
+                        <option value="land">Land</option>
+                        <option value="any">Any</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="property-details">
+                  <h4>Property Ratings</h4>
+                  <div class="search-options-box">
+                     <select class="search-input" name="price" id="price">
+                        <option value="" disabled selected>Price</option>
+                        <option value="great">Great</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="poor">Poor</option>
+                        <option value="any">Any</option>
+                     </select>
+                     <select class="search-input" name="rent" id="rent">
+                        <option value="" disabled selected>Rent</option>
+                        <option value="great">Great</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="poor">Poor</option>
+                        <option value="any">Any</option>
+                     </select>
+                     <select class="search-input" name="growth" id="growth">
+                        <option value="great">Great</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="poor">Poor</option>
+                        <option value="any">Any</option>
+                        <option value="" disabled selected>Growth</option>
+                     </select>
+                     <select class="search-input" name="renovation" id="renovation">
+                        <option value="" disabled selected>Renovation</option>
+                        <option value="great">Great</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="poor">Poor</option>
+                        <option value="any">Any</option>
+                     </select>
+                     <input class="search-input" type="text" placeholder="Location">
+                  </div>
+               </div>
+               <a href="#" class="advanced-search">Advanced Search</a>
+               <div class="property-details hidden">
+                  <div class="search-options-box">
+                     <select name="features" id="features" class="search-input">
+                        <option value="" disabled selected>Features</option>
+                     </select>
+                    <input type="text" id="min-sqft" class="search-input" placeholder="Minimum Sqft">
+                    <input type="text" id="max-sqft" class="search-input" placeholder="Maximum Sqft">
+                    <input type="text" id="min-sqft-lot" class="search-input" placeholder="Lot Minimum Sqft">
+                    <input type="text" id="max-sqft-lot" class="search-input" placeholder="Lot Maximum Sqft">
+                  </div>
+               </div>
+            </div>
+            <a href="#" class="btn btn-rounded">Search <img src="./assets/icons/next-arrow.svg" alt=""></a>
+         </div>
+         <div class="hero-img"></div>
+      </div>
+   </section>
+
+   <!-- Highlights -->
+   <section id="home-b" class="highlights">
+      <div class="container">
+         <h1 class="lead">Highlights</h1>
+         <div class="graphs-container">
+            <div class="graph-info">
+               <h4>Cities with high growth</h4>
+               <p class="graph-description">A small description just to spark the with space a little bit, this description will contain the summary of cities with a high growth.</p>
+               <div class="graph-box">
+                  <div class="graph-percentages">
+                     <p>0</p>
+                     <p>2%</p>
+                     <p>4%</p>
+                     <p>6%</p>
+                     <p>8%</p>
+                     <p>10%</p>
+                  </div>
+                  <div class="graph">
+                     <div class="bar bar-1"></div>
+                     <div class="bar bar-2"></div>
+                     <div class="bar bar-3"></div>
+                     <div class="bar bar-4"></div>
+                     <div class="bar bar-5"></div>
+                     <div class="bar bar-6"></div>
+                     <div class="bar bar-7"></div>
+                     <div class="bar bar-8"></div>
+                     <div class="bar bar-9"></div>
+                     <div class="bar bar-10"></div>
+                  </div>
+                  <div class="graph-lines">
+                     <div class="dotted-line"></div>
+                     <div class="dotted-line"></div>
+                     <div class="dotted-line"></div>
+                     <div class="dotted-line"></div>
+                     <div class="dotted-line"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="graph-info">
+               <h4>Cities with high rental yields</h4>
+               <p class="graph-description">A small description just to spark the with space a little bit, this description will contain the summary of cities with a high growth.</p>
+               <div class="graph-box">
+                  <div class="graph-percentages">
+                     <p>0</p>
+                     <p>2%</p>
+                     <p>4%</p>
+                     <p>6%</p>
+                     <p>8%</p>
+                     <p>10%</p>
+                  </div>
+                  <div class="graph">
+                     <div class="bar bar-1"></div>
+                     <div class="bar bar-2"></div>
+                     <div class="bar bar-3"></div>
+                     <div class="bar bar-4"></div>
+                     <div class="bar bar-5"></div>
+                     <div class="bar bar-6"></div>
+                     <div class="bar bar-7"></div>
+                     <div class="bar bar-8"></div>
+                     <div class="bar bar-9"></div>
+                     <div class="bar bar-10"></div>
+                  </div>
+                  <div class="graph-lines">
+                     <div class="dotted-line"></div>
+                     <div class="dotted-line"></div>
+                     <div class="dotted-line"></div>
+                     <div class="dotted-line"></div>
+                     <div class="dotted-line"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+    
+</body>
+</html>
