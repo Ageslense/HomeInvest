@@ -1,3 +1,16 @@
+.bg-white {
+  background: #ffffff;
+}
+
+.bg-white h4 {
+  color: #8A8A8A;
+  padding-bottom: 1rem;
+}
+
+.bg-img {
+  background: center center /cover no-repeat;
+}
+
 .btn {
   background: linear-gradient(45deg, #0788E9 65%, #23F8DE);
   color: white;
@@ -24,21 +37,9 @@
   padding: 1rem 0;
 }
 
-input:focus {
-  outline: none;
-}
-
-p {
-  font-family: light-font;
-}
-
-select option {
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-select:focus {
-  outline: none;
+.test {
+  height: 100vw;
+  background: red;
 }
 
 * {
@@ -57,6 +58,23 @@ a {
 
 h4 {
   font-family: light-font;
+}
+
+input:focus {
+  outline: none;
+}
+
+p {
+  font-family: light-font;
+}
+
+select option {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+select:focus {
+  outline: none;
 }
 
 #navbar-box {
@@ -173,10 +191,11 @@ h4 {
       -ms-flex-direction: column;
           flex-direction: column;
   top: 70px;
-  left: 30px;
+  left: 8%;
   height: 535px;
-  width: 83%;
+  width: 84%;
   padding: 1rem;
+  margin: auto;
   background: rgba(255, 255, 255, 0.85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px);
@@ -343,5 +362,83 @@ h4 {
   border-top: 2px dotted #E9E9E9;
   width: 100%;
   height: 20%;
+}
+
+#home-c .container .property-card-holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding-bottom: 1rem;
+  grid-gap: 1.5rem;
+}
+
+#home-c .container .property-card-holder .property-card {
+  display: none;
+  position: relative;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+#home-c .container .property-card-holder .property-card:first-child {
+  display: block;
+}
+
+#home-c .container .property-card-holder .property-card:nth-child(2) {
+  display: block;
+}
+
+#home-c .container .property-card-holder .property-card .bg-img {
+  top: 0;
+  height: 300px;
+  width: 100%;
+}
+
+#home-c .container .property-card-holder .property-card .bg-img-1 {
+  background-image: url(/assets/img/main/property-cards/nenenan-1.jpg);
+}
+
+#home-c .container .property-card-holder .property-card .bg-img-2 {
+  background-image: url(/assets/img/main/property-cards/nenenan-2.jpg);
+}
+
+#home-c .container .property-card-holder .property-card .bg-img-3 {
+  background-image: url(/assets/img/main/property-cards/nenenan-3.jpg);
+}
+
+#home-c .container .property-card-holder .property-card .bg-img-4 {
+  background-image: url(/assets/img/main/property-cards/nenenan-4.jpg);
+}
+
+#home-c .container .property-card-holder .property-card .detail-icons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgba(239, 239, 239, 0.48);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  border-radius: 0 0 1rem 1rem;
+}
+
+#home-c .container .property-card-holder .property-card .detail-icons .detail-icon-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
