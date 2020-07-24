@@ -7,11 +7,11 @@ $dark-color: #1A1A1A;
 $gradient-color: linear-gradient(45deg , #0788E9 65%, #23F8DE);
 $main-navbar-color: white;
 $main-light-color: #333;
-$navbar-height: 50px;
-$navbar-logo-width: 30px;
+$navbar-height: 72px;
+$navbar-logo-height: 45px;
 
 
-$website-width: 93%;
+$website-width: 86%;
 
 // Utilities
 
@@ -211,7 +211,6 @@ $website-width: 93%;
    background: red;
 }
 
-
 // General Styling
 *{
    margin: 0;
@@ -255,8 +254,8 @@ select{
 #navbar-box{
    position: fixed;
    height: $navbar-height;
-   top: 0;
    width: 100%;
+   top: 0;
    z-index: 20;
    background: white;
 
@@ -265,11 +264,13 @@ select{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      align-items: center;
 
       &-logo{
-         width: 110px;
-         height: $navbar-logo-width;
+         width: 165px;
+         height: $navbar-logo-height;
          background: url(../assets/icons/main-logo.png) center center /contain no-repeat;
+         transform: translateY(-2px);
       }
 
       &-items{
@@ -354,9 +355,9 @@ select{
             display: flex;
             flex-direction: column;
             top: $navbar-height + 20px;
-            left: 8%;
+            left: 12%;
             height: 535px;
-            width: 84%;
+            width: 76%;
             padding: 1rem;
             margin: auto;
             background: rgba($color: #ffffff, $alpha: .85);

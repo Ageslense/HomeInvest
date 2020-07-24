@@ -36,7 +36,7 @@
 }
 
 .container {
-  width: 93%;
+  width: 86%;
   margin: 0 auto;
 }
 
@@ -247,15 +247,15 @@ select:focus {
 
 #navbar-box {
   position: fixed;
-  height: 50px;
-  top: 0;
+  height: 72px;
   width: 100%;
+  top: 0;
   z-index: 20;
   background: white;
 }
 
 #navbar-box .navbar {
-  height: 50px;
+  height: 72px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,12 +265,15 @@ select:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  align-items: center;
 }
 
 #navbar-box .navbar-logo {
-  width: 110px;
-  height: 30px;
+  width: 165px;
+  height: 45px;
   background: url(../assets/icons/main-logo.png) center center/contain no-repeat;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 #navbar-box .navbar-items {
@@ -310,7 +313,7 @@ select:focus {
 }
 
 #navbar-box .kp-sidemenu-box .kp-sidemenu {
-  width: 93%;
+  width: 86%;
   height: calc( 100% - 48px);
   font-family: medium-font;
   padding: 24px 0;
@@ -346,7 +349,7 @@ select:focus {
 }
 
 #home-a {
-  margin-top: 50px;
+  margin-top: 72px;
 }
 
 #home-a .container .search-box {
@@ -358,10 +361,10 @@ select:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 70px;
-  left: 8%;
+  top: 92px;
+  left: 12%;
   height: 535px;
-  width: 84%;
+  width: 76%;
   padding: 1rem;
   margin: auto;
   background: rgba(255, 255, 255, 0.85);
@@ -436,7 +439,7 @@ select:focus {
   height: 570px;
   width: 100%;
   border-radius: 1.3rem;
-  margin-top: 50px;
+  margin-top: 72px;
   background: url(../assets/img/main/hero-image.jpg) center right/cover no-repeat;
 }
 
