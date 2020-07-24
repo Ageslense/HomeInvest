@@ -19,7 +19,7 @@ $website-width: 93%;
    &-white{
       background: #ffffff;
 
-      h4{
+      h5{
          color: $secondary-text-color;
          padding-bottom: 1rem;
       }
@@ -34,12 +34,13 @@ $website-width: 93%;
    background: $gradient-color;
    color: white;
    text-align: center;
+   font-family: light-font;
 
    &-rounded{
       margin-top: 1rem;
       padding: .7rem;
       font-size: 1.5rem;
-      border-radius: 120px;
+      border-radius: 2rem;
    }
 
 }
@@ -77,7 +78,7 @@ a{
    color: inherit;
 }
 
-h4{
+h3 , h4 , h5 , p{
    font-family: light-font;
 }
 
@@ -86,10 +87,6 @@ input{
    &:focus{
       outline: none;
    }
-}
-
-p{
-   font-family: light-font;
 }
 
 select{
@@ -199,6 +196,7 @@ select{
 // Home
 #home{
 
+   // Search
    &-a{
       margin-top: $navbar-height;
 
@@ -288,6 +286,7 @@ select{
       }
    }
 
+   // Graphs
    &-b{
 
       .container{
@@ -368,9 +367,12 @@ select{
       }
    }
 
+   // Property Cards
    &-c{
 
       .container{
+         display: flex;
+         flex-direction: column;
 
          .property-card-holder{
             display: grid;
@@ -380,10 +382,9 @@ select{
 
             .property-card{
                display: none;
-               position: relative;
-               width: 100%;
+               padding: 1rem .5rem;
                border-radius: 1rem;
-               overflow: hidden;
+               box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 
                &:first-child{
                   display: block;
@@ -392,50 +393,111 @@ select{
                &:nth-child(2){
                   display: block;
                }
-
-               .bg-img{
-                  top: 0;
-                  height: 300px;
-                  width: 100%;
-
-                  &-1{
-                     background-image: url(/assets/img/main/property-cards/nenenan-1.jpg);
-                  }
-
-                  &-2{
-                     background-image: url(/assets/img/main/property-cards/nenenan-2.jpg);
-                  }
-
-                  &-3{
-                     background-image: url(/assets/img/main/property-cards/nenenan-3.jpg);
-                  }
-
-                  &-4{
-                     background-image: url(/assets/img/main/property-cards/nenenan-4.jpg);
-                  }
-
-                  
+               
+               h4{
+                  padding: 0 0 1rem 1rem;
+                  font-size: .7rem;
                }
 
-               .detail-icons{
-                  position: absolute;
-                  bottom: 0;
+               .property-card-img{
+                  display: none;
+                  position: relative;
                   width: 100%;
-                  padding: 1rem;
-                  display: flex;
-                  justify-content: space-between;
-                  background: rgba(239, 239, 239, 0.48); 
-                  backdrop-filter: blur(12px);
-                  border-radius: 0 0 1rem 1rem;
-
-                  .detail-icon-group{
-                     display: flex;
-                     flex-direction: column;
-                     align-items: center;
-                     text-align: center;
+                  border-radius: 1rem;
+                  overflow: hidden;
+   
+                  &:first-child{
+                     display: block;
                   }
+   
+                  &:nth-child(2){
+                     display: block;
+                  }
+   
+                  .bg-img{
+                     top: 0;
+                     height: 300px;
+                     width: 100%;
+   
+                     &-1{
+                        background-image: url(/assets/img/main/property-cards/nenenan-1.jpg);
+                     }
+   
+                     &-2{
+                        background-image: url(/assets/img/main/property-cards/nenenan-2.jpg);
+                     }
+   
+                     &-3{
+                        background-image: url(/assets/img/main/property-cards/nenenan-3.jpg);
+                     }
+   
+                     &-4{
+                        background-image: url(/assets/img/main/property-cards/nenenan-4.jpg);
+                     }
+   
+                     
+                  }
+   
+                  .detail-icons{
+                     position: absolute;
+                     bottom: 0;
+                     width: 100%;
+                     padding: 1rem;
+                     display: flex;
+                     justify-content: space-between;
+                     background: rgba(239, 239, 239, 0.48); 
+                     backdrop-filter: blur(12px);
+                     border-radius: 0 0 1rem 1rem;
+   
+                     .detail-icon-group{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                     }
+                  }
+               }
+
+               .property-ratings{
+                  display: flex;
+                  padding-top: 1rem;
+                  width: 100%;
+                  justify-content: space-evenly;
+
+                  .rating{
+                     display: flex;
+
+                     .light{
+                        height: 10px;
+                        width: 10px;
+                        margin-right: 5px;
+                        border-radius: 50%;
+   
+                        &-green{
+                           background: #27AE60;
+                        }
+   
+                        &-orange{
+                           background: #F2994A ;
+                        }
+   
+                        &-yellow{
+                           background: #F2C94C ;
+                        }
+                     }
+
+                     p{
+                        font-size: .8rem;
+                     }
+                  }
+
                }
             }
+         }
+
+         .btn{
+            width: 15rem;
+            margin: auto;
          }
       }
    }
