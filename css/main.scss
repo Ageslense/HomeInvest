@@ -32,6 +32,7 @@ $website-width: 86%;
       }
 
       .info-text{
+         font-family: light-font;
          font-size: 1.3rem;
          line-height: 1.5;
       }
@@ -81,6 +82,14 @@ $website-width: 86%;
 
 .lead{
    padding: 0 0 1rem;
+
+      .dark-blue{
+         color: $primary-color;
+      }
+
+      .light-blue{
+         color: $light-blue-color;
+      }
 }
 
 .property-card-holder{
@@ -238,7 +247,7 @@ a{
    color: inherit;
 }
 
-h3 , h4 , h5 , p{
+h3 , h4 , h5{
    font-family: light-font;
 }
 
@@ -465,7 +474,8 @@ select{
 
             .graph-info{
 
-               p{
+               .graph-description{
+                  font-family: light-font;
                   color: $secondary-text-color;
                }
 
@@ -583,22 +593,6 @@ select{
 
    }
 
-   &-e{
-      .about-text{
-
-         .lead{
-
-            .dark-blue{
-               color: $primary-color;
-            }
-
-            .light-blue{
-               color: $light-blue-color;
-            }
-         }
-      }
-   }
-
    &-f{
       .container{
          .wrapped-text{
@@ -611,3 +605,78 @@ select{
    }
 }
 
+#footer{
+
+   &-main{
+      margin-top: 3rem;
+
+      .footer-links{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+         border-top: 1px solid #d1d1d1;
+         border-bottom: 1px solid #d1d1d1;
+
+         a{
+            font-family: light-font;
+            width: 60%;
+            color: $secondary-text-color;
+            padding: 1rem;
+            border-bottom: 1px dotted #d1d1d1 ;
+
+            &:last-child{
+               border-bottom: none;
+            }
+         }
+      }
+
+      .container{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+
+         .footer-info{
+            padding: 2rem 0;
+            color: #000000;
+         }
+
+         .footer-icons{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            width: 235px;
+
+            .home-invest-icon{
+               display: flex;
+
+               img{
+                  margin-right: .5rem;
+                  transform: translateY(-20px);
+               }
+
+               .lead{
+                  font-size: 1.5rem;
+                  padding: 0;
+               }
+            }
+
+            .social-icons{
+               display: flex;
+               justify-content: space-between;
+               transform: translateY(-15px);
+
+               a{
+                  width: 40px;
+               }
+            }
+         }
+
+         .footer-bottom{
+            width: 100%;
+            margin-top: 2rem;
+         }
+      }
+   }
+}

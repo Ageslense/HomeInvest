@@ -13,6 +13,7 @@
 }
 
 .bg-white .info-text {
+  font-family: light-font;
   font-size: 1.3rem;
   line-height: 1.5;
 }
@@ -58,6 +59,14 @@
 
 .lead {
   padding: 0 0 1rem;
+}
+
+.lead .dark-blue {
+  color: #0788E9;
+}
+
+.lead .light-blue {
+  color: #23F8DE;
 }
 
 .property-card-holder {
@@ -240,7 +249,7 @@ a {
   color: inherit;
 }
 
-h3, h4, h5, p {
+h3, h4, h5 {
   font-family: light-font;
 }
 
@@ -471,7 +480,8 @@ select:focus {
   margin-top: 1.2rem;
 }
 
-#home-b .container .graphs-container .graph-info p {
+#home-b .container .graphs-container .graph-info .graph-description {
+  font-family: light-font;
   color: #8A8A8A;
 }
 
@@ -580,16 +590,108 @@ select:focus {
   background-image: url(../assets/img/main/blog-cards/nenenan-4.jpg);
 }
 
-#home-e .about-text .lead .dark-blue {
-  color: #0788E9;
-}
-
-#home-e .about-text .lead .light-blue {
-  color: #23F8DE;
-}
-
 #home-f .container .wrapped-text .wrapped-text-img {
   width: 100%;
   margin-bottom: 2rem;
+}
+
+#footer-main {
+  margin-top: 3rem;
+}
+
+#footer-main .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-top: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+#footer-main .footer-links a {
+  font-family: light-font;
+  width: 60%;
+  color: #8A8A8A;
+  padding: 1rem;
+  border-bottom: 1px dotted #d1d1d1;
+}
+
+#footer-main .footer-links a:last-child {
+  border-bottom: none;
+}
+
+#footer-main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#footer-main .container .footer-info {
+  padding: 2rem 0;
+  color: #000000;
+}
+
+#footer-main .container .footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  width: 235px;
+}
+
+#footer-main .container .footer-icons .home-invest-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer-main .container .footer-icons .home-invest-icon img {
+  margin-right: .5rem;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+#footer-main .container .footer-icons .home-invest-icon .lead {
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+#footer-main .container .footer-icons .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+#footer-main .container .footer-icons .social-icons a {
+  width: 40px;
+}
+
+#footer-main .container .footer-bottom {
+  width: 100%;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
