@@ -12,26 +12,34 @@
   padding-bottom: 1rem;
 }
 
+.bg-white .info-text {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
 .bg-img {
   background: center center /cover no-repeat;
 }
 
 .btn {
+  display: block;
   background: linear-gradient(45deg, #0788E9 65%, #23F8DE);
   color: white;
   text-align: center;
+  margin: auto;
   font-family: light-font;
 }
 
 .btn-rounded {
   margin-top: 1rem;
   padding: .7rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius: 2rem;
 }
 
 .btn-all {
-  margin: auto;
+  margin: 2rem auto;
+  font-size: 1.5rem;
   width: 230px;
 }
 
@@ -40,12 +48,16 @@
   margin: 0 auto;
 }
 
+.first-section {
+  margin-top: 72px;
+}
+
 .hidden {
   display: none;
 }
 
 .lead {
-  padding: 1rem 0;
+  padding: 0 0 1rem;
 }
 
 .property-card-holder {
@@ -236,6 +248,10 @@ input:focus {
   outline: none;
 }
 
+section {
+  margin-top: 3rem;
+}
+
 select option {
   background-color: #f4f4f4;
   color: #333;
@@ -282,15 +298,15 @@ select:focus {
 
 #navbar-box .navbar .burger-logo-line {
   height: 2px;
-  width: 20px;
+  width: 24px;
   background: #333;
 }
 
 #navbar-box .navbar .burger-logo-line:nth-child(2) {
-  margin: 3px 0;
+  margin: 5px 0;
 }
 
-#navbar-box .kp-sidemenu-box {
+#navbar-box .sidemenu-box {
   opacity: 0;
   visibility: hidden;
   display: -webkit-box;
@@ -312,14 +328,14 @@ select:focus {
   z-index: 9999;
 }
 
-#navbar-box .kp-sidemenu-box .kp-sidemenu {
+#navbar-box .sidemenu-box .sidemenu {
   width: 86%;
   height: calc( 100% - 48px);
   font-family: medium-font;
   padding: 24px 0;
 }
 
-#navbar-box .kp-sidemenu-box .kp-sidemenu .kp-sidemenu-item-box {
+#navbar-box .sidemenu-box .sidemenu .sidemenu-item-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,22 +350,18 @@ select:focus {
   margin-bottom: 48px;
 }
 
-#navbar-box .kp-sidemenu-box .kp-sidemenu .kp-sidemenu-item-box .kp-sidemenu-item {
+#navbar-box .sidemenu-box .sidemenu .sidemenu-item-box .sidemenu-item {
   display: block;
   font-size: 24px;
   margin-top: 14px;
   color: #000;
 }
 
-#navbar-box.kp-sidemenu-opened .kp-sidemenu-box {
+#navbar-box.sidemenu-opened .sidemenu-box {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
-}
-
-#home-a {
-  margin-top: 72px;
 }
 
 #home-a .container .search-box {
@@ -429,6 +441,11 @@ select:focus {
   padding: .3rem;
 }
 
+#home-a .container .search-box .btn {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
 #home-a .container .search-box .btn img {
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
@@ -441,10 +458,6 @@ select:focus {
   border-radius: 1.3rem;
   margin-top: 72px;
   background: url(../assets/img/main/hero-image.jpg) center right/cover no-repeat;
-}
-
-#home-b .container {
-  padding-top: 2rem;
 }
 
 #home-b .container .graphs-container {
@@ -551,10 +564,6 @@ select:focus {
   background-image: url(/assets/img/main/property-cards/nenenan-4.jpg);
 }
 
-#home-d {
-  padding-top: 3rem;
-}
-
 #home-d .bg-img-1 {
   background-image: url(../assets/img/main/blog-cards/nenenan-1.jpg);
 }
@@ -569,5 +578,18 @@ select:focus {
 
 #home-d .bg-img-4 {
   background-image: url(../assets/img/main/blog-cards/nenenan-4.jpg);
+}
+
+#home-e .about-text .lead .dark-blue {
+  color: #0788E9;
+}
+
+#home-e .about-text .lead .light-blue {
+  color: #23F8DE;
+}
+
+#home-f .container .wrapped-text .wrapped-text-img {
+  width: 100%;
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

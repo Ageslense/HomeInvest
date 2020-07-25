@@ -2,6 +2,7 @@ $primary-text-color: #000;
 $primary-color: #0788E9;
 $secondary-text-color: #8A8A8A;
 $secondary-color: #52CFA1;
+$light-blue-color: #23F8DE;
 $light-color: #E9E9E9;
 $dark-color: #1A1A1A;
 $gradient-color: linear-gradient(45deg , #0788E9 65%, #23F8DE);
@@ -29,6 +30,11 @@ $website-width: 86%;
          color: $secondary-text-color;
          padding-bottom: 1rem;
       }
+
+      .info-text{
+         font-size: 1.3rem;
+         line-height: 1.5;
+      }
    }
 
    &-img{
@@ -37,20 +43,23 @@ $website-width: 86%;
 }
 
 .btn{
+   display: block;
    background: $gradient-color;
    color: white;
    text-align: center;
+   margin: auto;
    font-family: light-font;
 
    &-rounded{
       margin-top: 1rem;
       padding: .7rem;
-      font-size: 1.5rem;
+      font-size: 1rem;
       border-radius: 2rem;
    }
 
    &-all{
-      margin: auto;
+      margin: 2rem auto;
+      font-size: 1.5rem;
       width: 230px;
    }
 
@@ -61,12 +70,17 @@ $website-width: 86%;
    margin: 0 auto;
 }
 
+.first-section{
+   margin-top: $navbar-height;
+
+}
+
 .hidden{
    display: none;
 }
 
 .lead{
-   padding: 1rem 0;
+   padding: 0 0 1rem;
 }
 
 .property-card-holder{
@@ -235,6 +249,10 @@ input{
    }
 }
 
+section{
+   margin-top: 3rem;
+}
+
 select{
    
    option{
@@ -281,17 +299,17 @@ select{
 
          &-line{
             height: 2px;
-            width: 20px;
+            width: 24px;
             background: $main-light-color;
 
             &:nth-child(2){
-               margin: 3px 0;
+               margin: 5px 0;
             }
          }
       }
    }
 
-   .kp-sidemenu-box {
+   .sidemenu-box {
       opacity: 0;
       visibility: hidden;
       
@@ -311,20 +329,20 @@ select{
       
       z-index: 9999;
       
-         .kp-sidemenu {
+         .sidemenu {
             width: $website-width;
             height: calc( 100% - 48px );
             font-family: medium-font;
             padding: 24px 0;
    
-            .kp-sidemenu-item-box {
+            .sidemenu-item-box {
                display: flex;
                flex-direction: column;
                justify-items: center;
                align-items: center;
                margin-bottom: 48px;
    
-               .kp-sidemenu-item {
+               .sidemenu-item {
                   display: block;
                   font-size: 24px;
                   margin-top: 14px;
@@ -334,7 +352,7 @@ select{
          }
    }
    
-   &.kp-sidemenu-opened .kp-sidemenu-box {
+   &.sidemenu-opened .sidemenu-box {
       opacity: 1;
       visibility: visible;
       transform: translate3d( 0, 0, 0 );
@@ -346,7 +364,6 @@ select{
 
    // Search
    &-a{
-      margin-top: $navbar-height;
 
       .container{
          
@@ -414,6 +431,8 @@ select{
             }
 
             .btn{
+               width: 100%;
+               font-size: 1.5rem;
 
                img{
                   transform: translateY(4px);
@@ -438,7 +457,6 @@ select{
    &-b{
 
       .container{
-         padding-top: 2rem;
 
          .graphs-container{
             display: flex;
@@ -541,8 +559,8 @@ select{
       }
    }
 
+   // Blog Cards
    &-d{
-      padding-top: 3rem;
 
       .bg-img{
 
@@ -563,6 +581,33 @@ select{
          }
       }
 
+   }
+
+   &-e{
+      .about-text{
+
+         .lead{
+
+            .dark-blue{
+               color: $primary-color;
+            }
+
+            .light-blue{
+               color: $light-blue-color;
+            }
+         }
+      }
+   }
+
+   &-f{
+      .container{
+         .wrapped-text{
+            .wrapped-text-img{
+               width: 100%;
+               margin-bottom: 2rem;
+            }
+         }
+      }
    }
 }
 
