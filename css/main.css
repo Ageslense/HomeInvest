@@ -249,6 +249,10 @@ a {
   color: inherit;
 }
 
+body {
+  background: #ffffff;
+}
+
 h3, h4, h5 {
   font-family: light-font;
 }
@@ -258,7 +262,7 @@ input:focus {
 }
 
 section {
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
 
 select option {
@@ -619,6 +623,7 @@ select:focus {
   font-family: light-font;
   width: 60%;
   color: #8A8A8A;
+  line-height: 1.5;
   padding: 1rem;
   border-bottom: 1px dotted #d1d1d1;
 }
@@ -699,6 +704,9 @@ select:focus {
   .property-card-holder {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .property-card-holder .property-card {
+    display: block;
   }
   #home-b .container .graphs-container {
     -webkit-box-orient: horizontal;

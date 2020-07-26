@@ -247,6 +247,10 @@ a{
    color: inherit;
 }
 
+body{
+   background: #ffffff;
+}
+
 h3 , h4 , h5{
    font-family: light-font;
 }
@@ -259,7 +263,7 @@ input{
 }
 
 section{
-   margin-top: 3rem;
+   padding-top: 3rem;
 }
 
 select{
@@ -622,6 +626,7 @@ select{
             font-family: light-font;
             width: 60%;
             color: $secondary-text-color;
+            line-height: 1.5;
             padding: 1rem;
             border-bottom: 1px dotted #d1d1d1 ;
 
@@ -686,8 +691,13 @@ select{
    // Utilities
    .property-card-holder{
       grid-template-columns: repeat(2, 1fr);
+
+      .property-card{
+         display: block;
+      }
    }
 
+   // Site Stylings
    #home{
 
       &-b{
