@@ -680,3 +680,43 @@ select{
       }
    }
 }
+
+@media (min-width: 768px){
+
+   // Utilities
+   .property-card-holder{
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   #home{
+
+      &-b{
+
+         .container{
+
+            .graphs-container{
+               flex-direction: row;
+
+               .graph-info{
+                  padding: 1rem;
+               }
+            }
+         }
+      }
+   }
+
+   #footer{
+
+      &-main{
+
+         .footer-links{
+            flex-direction: row;
+
+            a{
+               border: none;
+            }
+         }
+      }
+
+   }
+}
