@@ -1,6 +1,6 @@
 let mainHench = {
 	toggleSidebar: function() {
-		let menuButton = document.querySelector( '.burger-menu' );
+		let menuButton = document.querySelector( '.burger-logo' );
 		let navigationBar = document.getElementById( 'navbar-box' );
 
 		menuButton.addEventListener( 'click', function() {
