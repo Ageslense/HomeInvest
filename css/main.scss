@@ -373,11 +373,12 @@ select{
    }
 
    &.sidemenu-opened .navbar{
+      position: relative;
 
       .burger-logo{
 
          &-line{
-
+            position: absolute;
             &:first-child{
                transform: rotate(45deg);
 

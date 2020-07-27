@@ -380,6 +380,14 @@ select:focus {
           transform: translate3d(0, 0, 0);
 }
 
+#navbar-box.sidemenu-opened .navbar {
+  position: relative;
+}
+
+#navbar-box.sidemenu-opened .navbar .burger-logo-line {
+  position: absolute;
+}
+
 #navbar-box.sidemenu-opened .navbar .burger-logo-line:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
