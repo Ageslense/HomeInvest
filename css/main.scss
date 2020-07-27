@@ -29,6 +29,7 @@ $website-width: 86%;
       h5{
          color: $secondary-text-color;
          padding-bottom: 1rem;
+         font-size: 1.2rem;
       }
 
       .info-text{
@@ -210,7 +211,7 @@ $website-width: 86%;
          padding: 1rem;
 
          h2{
-            padding: 1rem;
+            padding: 1rem 0;
             font-size: 1.3rem;
             font-family: light-font;
          }
@@ -280,7 +281,6 @@ select{
 
 }
 
-
 // Navbar
 #navbar-box{
    position: fixed;
@@ -314,6 +314,7 @@ select{
             height: 2px;
             width: 24px;
             background: $main-light-color;
+            transition: all 0.4s ease-in-out;
 
             &:nth-child(2){
                margin: 5px 0;
@@ -370,6 +371,28 @@ select{
       visibility: visible;
       transform: translate3d( 0, 0, 0 );
    }
+
+   &.sidemenu-opened .navbar{
+
+      .burger-logo{
+
+         &-line{
+
+            &:first-child{
+               transform: rotate(45deg);
+
+            }
+
+            &:nth-child(2){
+                  background: none;
+            }
+
+            &:nth-child(3){
+               transform: rotate(-45deg);
+            }
+         }
+      }
+   }
 }
 
 // Home
@@ -377,6 +400,7 @@ select{
 
    // Search
    &-a{
+      position: relative;
 
       .container{
          
@@ -384,7 +408,7 @@ select{
             position: absolute;
             display: flex;
             flex-direction: column;
-            top: $navbar-height + 20px;
+            top: 20px;
             left: 12%;
             height: 535px;
             width: 76%;
@@ -597,11 +621,18 @@ select{
 
    }
 
+   // About Alfred
    &-f{
       .container{
+
          .wrapped-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
             .wrapped-text-img{
                width: 100%;
+               max-width: 480px;
                margin-bottom: 2rem;
             }
          }
@@ -643,8 +674,13 @@ select{
          text-align: center;
 
          .footer-info{
+            font-family: light-font;
             padding: 2rem 0;
             color: #000000;
+
+            a{
+               color: steelblue;
+            }
          }
 
          .footer-icons{
@@ -705,11 +741,9 @@ select{
          .container{
 
             .graphs-container{
-               flex-direction: row;
-
-               .graph-info{
-                  padding: 1rem;
-               }
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+               grid-gap: 2rem;
             }
          }
       }

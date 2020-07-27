@@ -10,6 +10,7 @@
 .bg-white h5 {
   color: #8A8A8A;
   padding-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 .bg-white .info-text {
@@ -216,7 +217,7 @@
 }
 
 .property-card-holder .blog-card .blog-info h2 {
-  padding: 1rem;
+  padding: 1rem 0;
   font-size: 1.3rem;
   font-family: light-font;
 }
@@ -262,7 +263,7 @@ input:focus {
 }
 
 section {
-  padding-top: 3rem;
+  margin-top: 3rem;
 }
 
 select option {
@@ -313,6 +314,8 @@ select:focus {
   height: 2px;
   width: 24px;
   background: #333;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 #navbar-box .navbar .burger-logo-line:nth-child(2) {
@@ -377,6 +380,24 @@ select:focus {
           transform: translate3d(0, 0, 0);
 }
 
+#navbar-box.sidemenu-opened .navbar .burger-logo-line:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#navbar-box.sidemenu-opened .navbar .burger-logo-line:nth-child(2) {
+  background: none;
+}
+
+#navbar-box.sidemenu-opened .navbar .burger-logo-line:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#home-a {
+  position: relative;
+}
+
 #home-a .container .search-box {
   position: absolute;
   display: -webkit-box;
@@ -386,7 +407,7 @@ select:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 92px;
+  top: 20px;
   left: 12%;
   height: 535px;
   width: 76%;
@@ -594,8 +615,22 @@ select:focus {
   background-image: url(../assets/img/main/blog-cards/nenenan-4.jpg);
 }
 
+#home-f .container .wrapped-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #home-f .container .wrapped-text .wrapped-text-img {
   width: 100%;
+  max-width: 480px;
   margin-bottom: 2rem;
 }
 
@@ -647,8 +682,13 @@ select:focus {
 }
 
 #footer-main .container .footer-info {
+  font-family: light-font;
   padding: 2rem 0;
   color: #000000;
+}
+
+#footer-main .container .footer-info a {
+  color: steelblue;
 }
 
 #footer-main .container .footer-icons {
@@ -709,13 +749,11 @@ select:focus {
     display: block;
   }
   #home-b .container .graphs-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  #home-b .container .graphs-container .graph-info {
-    padding: 1rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
   }
   #footer-main .footer-links {
     -webkit-box-orient: horizontal;
