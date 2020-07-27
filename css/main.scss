@@ -379,6 +379,8 @@ select{
 
          &-line{
             position: absolute;
+            right: 0;
+
             &:first-child{
                transform: rotate(45deg);
 
@@ -647,23 +649,26 @@ select{
       margin-top: 3rem;
 
       .footer-links{
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         text-align: center;
-         border-top: 1px solid #d1d1d1;
-         border-bottom: 1px solid #d1d1d1;
 
-         a{
-            font-family: light-font;
-            width: 60%;
-            color: $secondary-text-color;
-            line-height: 1.5;
-            padding: 1rem;
-            border-bottom: 1px dotted #d1d1d1 ;
-
-            &:last-child{
-               border-bottom: none;
+         .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-top: 1px solid #d1d1d1;
+            border-bottom: 1px solid #d1d1d1;
+   
+            a{
+               font-family: light-font;
+               width: 60%;
+               color: $secondary-text-color;
+               line-height: 1.5;
+               padding: 1rem;
+               border-bottom: 1px dotted #d1d1d1 ;
+   
+               &:last-child{
+                  border-bottom: none;
+               }
             }
          }
       }
@@ -755,13 +760,63 @@ select{
       &-main{
 
          .footer-links{
-            flex-direction: row;
 
-            a{
-               border: none;
+            .container{
+               flex-direction: row;
+   
+               a{
+                  border: none;
+               }
             }
          }
       }
 
    }
+}
+
+@media (min-width: 1024px){
+
+   // Utilities
+
+   // Sİte Stylings
+   #home{
+
+      &-a{
+
+         .container{
+
+            .search-box{
+               width: 30%;
+               left: 9%;
+            }
+         }
+      }
+   }
+}
+
+@media (min-width: 1240px){
+
+
+   #home{
+
+      &-a{
+
+      }
+
+      &-b{
+
+         .container{
+
+            .graphs-container{
+               justify-content: space-between;
+   
+               .graph-info{
+                  max-width: 400px;
+               }
+            }
+         }
+
+      }
+   }
+
 }
