@@ -72,6 +72,10 @@ $website-width: 86%;
    margin: 0 auto;
 }
 
+.drop-shadow{
+   box-shadow:0px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
 .first-section{
    margin-top: $navbar-height;
 
@@ -155,6 +159,12 @@ $website-width: 86%;
                flex-direction: column;
                align-items: center;
                text-align: center;
+               justify-content: space-between;
+               height: 45px;
+
+               .detail-name{
+                  
+               }
             }
          }
       }
@@ -862,7 +872,7 @@ select{
 
       // About Alfred
       &-f{
-         
+
          .container{
 
             .wrapped-text{
