@@ -1,4 +1,4 @@
-$primary-text-color: #000;
+$primary-text-color: #1A1A1A;
 $primary-color: #0788E9;
 $secondary-text-color: #8A8A8A;
 $secondary-color: #52CFA1;
@@ -42,6 +42,40 @@ $website-width: 86%;
    &-img{
       background: center center /cover no-repeat;
    }
+}
+
+.blog-card{
+   padding: 0;
+   overflow: hidden;
+   box-shadow: none;
+
+   .bg-img{
+      height: 200px;
+      width: 100%;
+   }
+
+   .blog-info{
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+
+      h2{
+         padding: 1rem 0;
+         font-size: 1.3rem;
+         font-family: light-font;
+      }
+
+      p{
+         line-height: 1.5;
+         font-family: light-font;
+      }
+
+      .btn{
+         width: 60%;
+         margin: 1rem auto;
+      }
+   }
+
 }
 
 .btn{
@@ -97,147 +131,100 @@ $website-width: 86%;
       }
 }
 
+.property-card{
+   display: none;
+   padding: 1rem .5rem;
+   border-radius: 1rem;
+   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+
+   &:first-child{
+      display: block;
+   }
+
+   &:nth-child(2){
+      display: block;
+   }
+   
+   h4{
+      padding: 0 0 1rem 1rem;
+      font-size: .7rem;
+   }
+
+   .property-card-img{
+      position: relative;
+      width: 100%;
+      border-radius: 1rem;
+      overflow: hidden;
+
+      .bg-img{
+         top: 0;
+         height: 300px;
+         width: 100%;
+      }
+
+      .detail-icons{
+         position: absolute;
+         bottom: 0;
+         width: 100%;
+         padding: 1rem;
+         display: flex;
+         justify-content: space-between;
+         background: rgba(239, 239, 239, 0.48); 
+         backdrop-filter: blur(12px);
+         border-radius: 0 0 1rem 1rem;
+
+         .detail-icon-group{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+            height: 45px;
+         }
+      }
+   }
+
+   .property-ratings{
+      display: flex;
+      padding-top: 1rem;
+      width: 100%;
+      justify-content: space-evenly;
+
+      .rating{
+         display: flex;
+
+         .light{
+            height: 10px;
+            width: 10px;
+            margin-right: 5px;
+            border-radius: 50%;
+
+            &-green{
+               background: #27AE60;
+            }
+
+            &-orange{
+               background: #F2994A ;
+            }
+
+            &-yellow{
+               background: #F2C94C ;
+            }
+         }
+
+         p{
+            font-size: .8rem;
+         }
+      }
+
+   }
+}
+
 .property-card-holder{
    display: grid;
    grid-template-columns: 1fr;
    padding-bottom: 1rem;
    grid-gap: 1.5rem;
-
-   .property-card{
-      display: none;
-      padding: 1rem .5rem;
-      border-radius: 1rem;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-
-      &:first-child{
-         display: block;
-      }
-
-      &:nth-child(2){
-         display: block;
-      }
-      
-      h4{
-         padding: 0 0 1rem 1rem;
-         font-size: .7rem;
-      }
-
-      .property-card-img{
-         display: none;
-         position: relative;
-         width: 100%;
-         border-radius: 1rem;
-         overflow: hidden;
-
-         &:first-child{
-            display: block;
-         }
-
-         &:nth-child(2){
-            display: block;
-         }
-
-         .bg-img{
-            top: 0;
-            height: 300px;
-            width: 100%;
-         }
-
-         .detail-icons{
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            background: rgba(239, 239, 239, 0.48); 
-            backdrop-filter: blur(12px);
-            border-radius: 0 0 1rem 1rem;
-
-            .detail-icon-group{
-               display: flex;
-               flex-direction: column;
-               align-items: center;
-               text-align: center;
-               justify-content: space-between;
-               height: 45px;
-
-               .detail-name{
-                  
-               }
-            }
-         }
-      }
-
-      .property-ratings{
-         display: flex;
-         padding-top: 1rem;
-         width: 100%;
-         justify-content: space-evenly;
-
-         .rating{
-            display: flex;
-
-            .light{
-               height: 10px;
-               width: 10px;
-               margin-right: 5px;
-               border-radius: 50%;
-
-               &-green{
-                  background: #27AE60;
-               }
-
-               &-orange{
-                  background: #F2994A ;
-               }
-
-               &-yellow{
-                  background: #F2C94C ;
-               }
-            }
-
-            p{
-               font-size: .8rem;
-            }
-         }
-
-      }
-   }
-
-   .blog-card{
-      padding: 0;
-      overflow: hidden;
-      box-shadow: none;
-
-      .bg-img{
-         height: 200px;
-         width: 100%;
-      }
-
-      .blog-info{
-         display: flex;
-         flex-direction: column;
-         padding: 1rem;
-
-         h2{
-            padding: 1rem 0;
-            font-size: 1.3rem;
-            font-family: light-font;
-         }
-
-         p{
-            line-height: 1.5;
-            font-family: light-font;
-         }
-
-         .btn{
-            width: 60%;
-            margin: 1rem auto;
-         }
-      }
-
-   }
 }
 
 .test{
@@ -647,6 +634,114 @@ select{
                width: 100%;
                max-width: 480px;
                margin-bottom: 2rem;
+            }
+         }
+      }
+   }
+}
+
+// Property Details
+#property-details{
+
+   &-a{
+      padding-top: 2rem;
+
+      .container{
+
+         .property-card{
+         
+            .property-card-img{
+         
+               .bg-img{
+                  border-radius: 1rem;
+
+                  &-1{
+                     background-image: url(../assets/img/main/property-cards/nenenan-1.jpg);
+                  }
+                  &-2{
+                     background-image: url(../assets/img/main/property-cards/nenenan-2.jpg);
+                  }
+                  &-3{
+                     background-image: url(../assets/img/main/property-cards/nenenan-3.jpg);
+                  }
+                  &-4{
+                     background-image: url(../assets/img/main/property-cards/nenenan-4.jpg);
+                  }
+               }
+
+               &.property-slider-bottom{
+                  border-radius: 0;
+
+                  .slick-slide{
+                     margin: 5px;
+                  }
+                  
+                  .bg-img{
+                     height: 50px;
+                     width: 50px;
+                     border-radius: .3rem;
+                     margin: .5rem 0 0;
+                  }
+               }
+            }
+         }
+
+         .property-card-holder{
+            margin-top: 1.5rem;
+
+            display: flex;
+            flex-direction: column-reverse;
+
+            .property-card{
+               display: block;
+            }
+
+            .update-form-card{
+
+               .lead{
+                  font-size: 1.3rem;
+               }
+
+               .update-form{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+
+                  .update-info{
+                     padding: .5rem;
+                     width: 100%;
+                     margin-top: .5rem;
+                  }
+               }
+
+               .btn{
+                  font-family: bold-font;
+
+                  img{
+                     transform: translateY(4px);
+                  }
+               }
+            }
+
+            .detail-card{
+               height: 80px;
+
+               .property-card-img{
+                  height: 100%;
+
+                  .detail-icons{
+                     background: none;
+                     position: relative;
+                     padding: 0;
+                  }
+               }
+            }
+
+            .rating-card{
+
+               .property-ratings{
+                  padding: 0;
+               }
             }
          }
       }
