@@ -747,6 +747,42 @@ select:focus {
   padding: 0;
 }
 
+#property-details-b .container .lead {
+  padding-top: 2rem;
+}
+
+#property-details-b .container .lead:first-child {
+  padding-top: 0;
+}
+
+#property-details-b .container .property-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  border-bottom: 1px #E9E9E9 solid;
+  padding-bottom: 2rem;
+}
+
+#property-details-b .container .property-info-pair {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5;
+}
+
+#property-details-b .container .property-info-pair .property-info-name {
+  font-family: bold-font;
+  margin-right: .3rem;
+}
+
+#property-details-b .container .property-info-pair .property-info-icon {
+  padding: .5rem .5rem .5rem 0;
+}
+
 #footer-main {
   margin-top: 3rem;
 }
