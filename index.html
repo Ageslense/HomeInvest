@@ -3,9 +3,9 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/css/main.css">
-   <link rel="stylesheet" href="/css/fonts.css">
-   <link rel="stylesheet" href="/css/index.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/index.css">
    <title>Home Invest</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
          <div class="navbar">
             <div class="navbar-logo"></div>
             <ul class="navbar-items">
-               <a href="index.html" class="navbar-item">Home</a>
+               <a href="index.html" class="navbar-item current">Home</a>
                <a href="properties.html" class="navbar-item">Properties</a>
                <a href="about.html" class="navbar-item">About</a>
                <a href="alfred.html" class="navbar-item">A.L.F.R.E.D</a>
@@ -134,8 +134,12 @@
                      <input class="search-input" type="text" placeholder="Location">
                   </div>
                </div>
-               <a href="#" class="advanced-search">Advanced Search</a>
-               <div class="property-details hidden">
+
+               <span class="advanced-search">Advanced Search</span>
+               
+               <div class="property-details hidden" id="advanced-search-details">
+                  <h4>Property Details</h4>
+
                   <div class="search-options-box">
                      <select name="features" id="features" class="search-input">
                         <option value="" disabled selected>Features</option>
@@ -172,16 +176,76 @@
                   </div>
                   <div class="graph">
                      <div class="bars">
-                        <div class="bar bar-1"></div>
-                        <div class="bar bar-2"></div>
-                        <div class="bar bar-3"></div>
-                        <div class="bar bar-4"></div>
-                        <div class="bar bar-5"></div>
-                        <div class="bar bar-6"></div>
-                        <div class="bar bar-7"></div>
-                        <div class="bar bar-8"></div>
-                        <div class="bar bar-9"></div>
-                        <div class="bar bar-10"></div>
+                        <div class="bar bar-1">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-2">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-3">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-4">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-5">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-6">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-7">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-8">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-9">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-10">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
                      </div>
 
                      <div class="graph-lines">
@@ -208,16 +272,76 @@
                   </div>
                   <div class="graph">
                      <div class="bars">
-                        <div class="bar bar-1"></div>
-                        <div class="bar bar-2"></div>
-                        <div class="bar bar-3"></div>
-                        <div class="bar bar-4"></div>
-                        <div class="bar bar-5"></div>
-                        <div class="bar bar-6"></div>
-                        <div class="bar bar-7"></div>
-                        <div class="bar bar-8"></div>
-                        <div class="bar bar-9"></div>
-                        <div class="bar bar-10"></div>
+                        <div class="bar bar-1">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-2">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-3">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-4">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-5">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-6">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-7">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-8">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-9">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
+                        <div class="bar bar-10">
+                           <div class="bar-toolkit bg-dark">
+                              <h5>Indianapolis</h5>
+                              <p class="yield-rate">Yield Rate: 9.86%</p>
+                              <p class="average-rate">Average Rate: 6.78%</p>
+                           </div>
+                        </div>
                      </div>
 
                      <div class="graph-lines">
@@ -535,6 +659,7 @@
    </footer>
 
    <script src="/assets/javascript/navbar.js"></script>
+   <script src="assets/javascript/index.js"></script>
     
 </body>
 </html>

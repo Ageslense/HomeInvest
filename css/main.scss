@@ -303,6 +303,10 @@ select{
 
       &-items{
          display: none;
+
+         .navbar-item.current{
+            color: $secondary-text-color;
+         }
       }
 
       .burger-logo{
@@ -537,15 +541,56 @@ select{
                         height: 250px;
                         width: 100%;
 
+                        &.bars-hovered {
+                        	.bar {
+                              background-color: $light-color;
+                        	}
+                        }
+
                         .bar{
+                           position: relative;
+                           display: flex;
+                           flex-direction: column;
+                           align-items: center;
                            width: 7%;
                            margin-right: calc( 30% / 9);
                            height: 100%;
                            background: $secondary-color;
                            z-index: 1;
+                           transition: background .16s ease-in-out;
+
+                         .bar-toolkit{
+                            display: none;
+                         }
+
    
                            &:last-child{
                               margin-right: 0;
+                           }
+                           
+                        	&.bar-hovered {
+                              background: $secondary-color;
+                              
+                              .bar-toolkit{
+                                 display: flex;
+                                 flex-direction: column;
+                                 position: absolute;
+                                 top: 105%;
+                                 border-radius: 6px;
+                                 padding: .5rem;
+                                 width: 120px;
+   
+                                 h5{
+                                    font-size: 1rem;
+                                    color: #ffffff;
+                                    padding-bottom: 5px;
+                                 }
+   
+                                 p{
+                                    font-size: .7rem;
+                                    font-family: light-font;
+                                 }
+                              }
                            }
                         }
                      }
@@ -654,6 +699,7 @@ select{
          
                .bg-img{
                   border-radius: 1rem;
+                  height: 400px;
 
                   &-1{
                      background-image: url(../assets/img/main/property-cards/nenenan-1.jpg);
@@ -709,7 +755,7 @@ select{
 
                   .update-info{
                      padding: .5rem;
-                     width: 100%;
+                     width: 99%;
                      margin-top: .5rem;
                   }
                }
@@ -780,6 +826,20 @@ select{
                }
             }
          }
+      }
+   }
+
+   &-c{
+      margin-top: 2rem;
+
+      .lead{
+         padding-bottom: 2rem;
+      }
+
+      #map{
+         width: 100%;
+         height: 400px;
+         border-radius: 1rem;
       }
    }
 }
@@ -869,7 +929,7 @@ select{
    }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 768px){
 
    // Utilities
    .property-card-holder{
@@ -891,6 +951,81 @@ select{
                display: grid;
                grid-template-columns: 1fr 1fr;
                grid-gap: 2rem;
+            }
+         }
+      }
+   }
+
+   #property-details{
+
+      &-a{
+
+         .container{
+
+            .property-card{
+
+               .property-card-img.property-slider-bottom{
+                  
+                  .bg-img{
+                     height: 100px;
+                  }
+               }
+            }
+
+            .property-card-holder{
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+
+               .update-form-card{
+                  padding-top: 2rem;
+
+                  .btn{
+                     margin-top: 2rem;
+                  }
+               }
+
+               .detail-card{
+                  height: inherit;
+                  padding: 0 1rem;
+
+                  .detail-icons{
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: space-evenly;
+                     height: 100%;
+
+                     .detail-icon-group{
+                        border-bottom: 1px solid $light-color;
+                        padding: 1rem;
+                        height: inherit;
+                     }
+                  }
+               }
+
+               .rating-card{
+                  padding: 0 1rem;
+
+                  .property-ratings{
+                     flex-direction: column;
+                     justify-content: space-evenly;
+                     height: 100%;
+
+                     .rating{
+                        border-bottom: 1px solid $light-color;
+                        padding: 2rem;
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      &-b{
+
+         .container{
+
+            .property-info{
+               grid-template-columns: 1fr 1fr;
             }
          }
       }
@@ -953,6 +1088,105 @@ select{
             .search-box{
                width: 30%;
                left: 9%;
+
+               .search-box-container{
+                  position: relative;
+                  overflow: visible;
+
+                  #advanced-search-details{
+                     position: absolute;
+                     left: 110%;
+                     top: -1rem;
+                     width: 100%;
+                     padding: 1rem;
+                     background: rgba($color: #ffffff, $alpha: 0.85);
+                     backdrop-filter: saturate(180%) blur(20px);
+                     border-radius: 1rem;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   #property-details{
+
+      &-a{
+
+         & > .container{
+            display: flex;
+            justify-content: space-between;
+
+            & > .property-card{
+               width: 77%;
+
+               .property-card-img{
+
+                  .bg-img{
+                     height: 450px;
+                  }
+
+                  &.property-slider-bottom{
+
+                     .bg-img{
+                        height: 120px;
+                     }
+                  }
+               }
+            }
+
+            .property-card-holder{
+               display: flex;
+               flex-direction: column;
+               width: 20%;
+               margin-top: 0;
+               padding-bottom: 0;
+   
+                  .update-form-card{
+                     padding-top: 1rem;
+
+                     .lead{
+                        font-size: 1.2rem;
+                     }
+   
+                     .btn{
+                        margin-top: 1rem;
+                     }
+                  }
+   
+                  .detail-card{
+                     height: inherit;
+                     padding: 0 1rem;
+   
+                     .detail-icons{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        height: 100%;
+   
+                        .detail-icon-group{
+                           border-bottom: 1px solid $light-color;
+                           padding: .5rem;
+                           height: inherit;
+                        }
+                     }
+                  }
+   
+                  .rating-card{
+                     padding: 0 1rem;
+   
+                     .property-ratings{
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        height: 100%;
+   
+                        .rating{
+                           border-bottom: 1px solid $light-color;
+                           padding: .7rem;
+                        }
+                     }
+                  }
+               
             }
          }
       }
@@ -1018,4 +1252,19 @@ select{
          }
       }
    }
+
+   #property-details{
+
+      &-b{
+
+         .container{
+   
+            .property-info{
+               grid-template-columns: repeat(3, 1fr);
+            }
+         }
+      }
+   }
+
+
 }

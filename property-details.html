@@ -44,7 +44,6 @@
       </div>
    </nav>
 
-
    <!-- Property Slider -->
    <section id="property-details-a" class="bg-white first-section">
       <div class="container">
@@ -161,6 +160,14 @@
                <p class="property-info-name">Heating:</p>
                <p class="property-info-value">Electric</p>
             </div>
+            <div class="property-info-pair">
+               <p class="property-info-name">Parking:</p>
+               <p class="property-info-value">Port</p>
+            </div>
+            <div class="property-info-pair">
+               <p class="property-info-name">Cooling:</p>
+               <p class="property-info-value">Window Units</p>
+            </div>
          </div>
 
          <h1 class="lead">Financials</h1>
@@ -215,7 +222,12 @@
    </section>
 
    <section id="property-details-c">
-      
+      <div class="container">
+         <h1 class="lead">
+            Location
+         </h1>
+         <div id="map"></div>
+      </div>
    </section>
 
    <footer id="footer-main">
@@ -257,24 +269,10 @@
    <script type="text/javascript" src="/assets/javascript/jquery-3.5.1.min.js"></script>
    <script  src="/assets/javascript/navbar.js"></script>
    <script type="text/javascript" src="/assets/javascript/slick.js"></script>
-    
-   <script type="text/javascript">
-      $('.property-slider-top').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: '.property-slider-bottom'
-      });
-      $('.property-slider-bottom').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.property-slider-top',
-      centerMode: true,
-      focusOnSelect: true,
-      arrows: false,
-      });
-   </script>
+   <script  src="/assets/javascript/property-details.js"></script>
+   
+   <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCi0KmZzuYZSqh-3tyNxszCbK1gPHX9IwQ&v=3.31&language=en&libraries=places,geometry&callback=createMap"></script>
+
 
 </body>
 </html>
