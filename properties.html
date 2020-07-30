@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css/main.css">
+   <link rel="stylesheet" href="/css/fonts.css">
+   <link rel="stylesheet" href="/css/properties.css">
+   <title>Home Invest - Properties</title>
+</head>
+<body>
+
+   <nav id="navbar-box">
+      <div class="container">
+         <div class="navbar">
+            <div class="navbar-logo"></div>
+            <ul class="navbar-items">
+               <a href="index.html" class="navbar-item">Home</a>
+               <a href="properties.html" class="navbar-item current">Properties</a>
+               <a href="about.html" class="navbar-item">About</a>
+               <a href="alfred.html" class="navbar-item">A.L.F.R.E.D</a>
+               <a href="contact.html" class="navbar-item">Contact Us</a>
+               <a href="profile.html" class="navbar-item profile-link"></a>
+            </ul>
+            <div class="burger-logo">
+               <div class="burger-logo-line"></div>
+               <div class="burger-logo-line"></div>
+               <div class="burger-logo-line"></div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="sidemenu-box">
+         <div class="sidemenu">
+            <div class="sidemenu-item-box">
+               <a href="index.html" class="sidemenu-item">Home</a>
+               <a href="properties.html" class="sidemenu-item ">Properties</a>
+               <a href="about.html" class="sidemenu-item">About</a>
+               <a href="alfred.html" class="sidemenu-item">A.L.F.R.E.D</a>
+               <a href="contact.html" class="sidemenu-item">Contact Us</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+   <!-- Search -->
+   <section id="properties-a" class="first-section">
+      <div class="container property-card">
+         <div class="property-search">
+            <div class="property-search-options">
+               <select class="search-input" name="min-price" id="min-price">
+                  <option value="" disabled selected>Minimum Price</option>
+                  <option value="0">$0</option>
+                  <option value="100000">$100,000</option>
+                  <option value="200000">$200,000</option>
+                  <option value="300000">$300,000</option>
+                  <option value="1000000">$1,000,000</option>
+               </select>
+               <select class="search-input" name="max-price" id="max-price">
+                  <option value="" disabled selected>Maximum Price</option>
+                  <option value="0">$0</option>
+                  <option value="100000">$100,000</option>
+                  <option value="200000">$200,000</option>
+                  <option value="300000">$300,000</option>
+                  <option value="1000000">$1,000,000</option>
+               </select>
+               <select class="search-input" name="min-bed" id="min-bed">
+                  <option value="" disabled selected>Minimum Bedrooms</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4+">4+</option>
+               </select>
+               <select class="search-input" name="max-bed" id="max-bed">
+                  <option value="" disabled selected>Minimum Bathrooms</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4+">4+</option>
+               </select>
+               <select class="search-input" name="property-type" id="property-type">
+                  <option value="" disabled selected>Property Type</option>
+                  <option value="house">House</option>
+                  <option value="multi-family">Multi-Family</option>
+                  <option value="apartment-condo">Apartment/Condo</option>
+                  <option value="land">Land</option>
+                  <option value="any">Any</option>
+               </select>
+               <select class="search-input" name="price" id="price">
+                  <option value="" disabled selected>Price</option>
+                  <option value="great">Great</option>
+                  <option value="good">Good</option>
+                  <option value="fair">Fair</option>
+                  <option value="poor">Poor</option>
+                  <option value="any">Any</option>
+               </select>
+               <select class="search-input" name="rent" id="rent">
+                  <option value="" disabled selected>Rent</option>
+                  <option value="great">Great</option>
+                  <option value="good">Good</option>
+                  <option value="fair">Fair</option>
+                  <option value="poor">Poor</option>
+                  <option value="any">Any</option>
+               </select>
+               <select class="search-input" name="growth" id="growth">
+                  <option value="great">Great</option>
+                  <option value="good">Good</option>
+                  <option value="fair">Fair</option>
+                  <option value="poor">Poor</option>
+                  <option value="any">Any</option>
+                  <option value="" disabled selected>Growth</option>
+               </select>
+               <select class="search-input" name="renovation" id="renovation">
+                  <option value="" disabled selected>Renovation</option>
+                  <option value="great">Great</option>
+                  <option value="good">Good</option>
+                  <option value="fair">Fair</option>
+                  <option value="poor">Poor</option>
+                  <option value="any">Any</option>
+               </select>
+               <input class="search-input" type="text" placeholder="Location">
+            </div>
+            <div class="property-search-options advanced-search-box hidden">
+              <input type="text" id="min-sqft" class="search-input" placeholder="Minimum Sqft">
+              <input type="text" id="max-sqft" class="search-input" placeholder="Maximum Sqft">
+              <input type="text" id="min-sqft-lot" class="search-input" placeholder="Lot Minimum Sqft">
+              <input type="text" id="max-sqft-lot" class="search-input" placeholder="Lot Maximum Sqft">
+              <select name="features" id="features" class="search-input">
+               <option value="" disabled selected>Features</option>
+            </select>
+            </div>
+         </div>
+         <div class="search-buttons">
+            <span class="advanced-search">Advanced Search</span>
+            <a href="#" class="btn btn-rounded btn-search">Search <img src="./assets/icons/next-arrow.svg" alt=""></a>
+         </div>
+      </div>
+   </section>
+
+   <div id="properties-b">
+      <div class="container">
+         <div class="sort-by">
+            <p>
+               Sort By:
+            </p>
+            <select class="sort-by-input" name="sort-by" id="sort-by">
+               <option value="price">Highest Price</option>
+               <option value="price-">Lowest Price</option>
+               <option value="sqft">Highest Squarefeet</option>
+            </select>
+         </div>
+         <div class="property-card-holder">
+            <a href="property-details.html" class="property-card">
+               <h4>20085 Main Street, Hometown, TX, 43223</h4>
+               <div class="property-card-img">
+                  <div class="bg-img bg-img-1"></div>
+                  <div class="detail-icons">
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                        <p class="detail-name">3 Beds</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                        <p class="detail-name">2 baths</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                        <p class="detail-name">422 sqft</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                        <p class="detail-name">1224 sqft</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="property-ratings">
+                  <div class="rating">
+                     <div class="light light-green"></div>
+                     <p>Price</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Growth</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Rent</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-yellow"></div>
+                     <p>Renovation</p>
+                  </div>
+               </div>
+            </a>
+            <a href="property-details.html" class="property-card">
+               <h4>20085 Main Street, Hometown, TX, 43223</h4>
+               <div class="property-card-img">
+                  <div class="bg-img bg-img-2"></div>
+                  <div class="detail-icons">
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                        <p class="detail-name">3 Beds</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                        <p class="detail-name">2 baths</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                        <p class="detail-name">422 sqft</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                        <p class="detail-name">1224 sqft</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="property-ratings">
+                  <div class="rating">
+                     <div class="light light-green"></div>
+                     <p>Price</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Growth</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Rent</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-yellow"></div>
+                     <p>Renovation</p>
+                  </div>
+               </div>
+            </a>
+            <a href="property-details.html" class="property-card">
+               <h4>20085 Main Street, Hometown, TX, 43223</h4>
+               <div class="property-card-img">
+                  <div class="bg-img bg-img-3"></div>
+                  <div class="detail-icons">
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                        <p class="detail-name">3 Beds</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                        <p class="detail-name">2 baths</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                        <p class="detail-name">422 sqft</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                        <p class="detail-name">1224 sqft</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="property-ratings">
+                  <div class="rating">
+                     <div class="light light-green"></div>
+                     <p>Price</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Growth</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Rent</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-yellow"></div>
+                     <p>Renovation</p>
+                  </div>
+               </div>
+            </a>
+            <a href="property-details.html" class="property-card">
+               <h4>20085 Main Street, Hometown, TX, 43223</h4>
+               <div class="property-card-img">
+                  <div class="bg-img bg-img-4"></div>
+                  <div class="detail-icons">
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                        <p class="detail-name">3 Beds</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                        <p class="detail-name">2 baths</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                        <p class="detail-name">422 sqft</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                        <p class="detail-name">1224 sqft</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="property-ratings">
+                  <div class="rating">
+                     <div class="light light-green"></div>
+                     <p>Price</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Growth</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Rent</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-yellow"></div>
+                     <p>Renovation</p>
+                  </div>
+               </div>
+            </a>
+            <a href="property-details.html" class="property-card">
+               <h4>20085 Main Street, Hometown, TX, 43223</h4>
+               <div class="property-card-img">
+                  <div class="bg-img bg-img-3"></div>
+                  <div class="detail-icons">
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                        <p class="detail-name">3 Beds</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                        <p class="detail-name">2 baths</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                        <p class="detail-name">422 sqft</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                        <p class="detail-name">1224 sqft</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="property-ratings">
+                  <div class="rating">
+                     <div class="light light-green"></div>
+                     <p>Price</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Growth</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Rent</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-yellow"></div>
+                     <p>Renovation</p>
+                  </div>
+               </div>
+            </a>
+            <a href="property-details.html" class="property-card">
+               <h4>20085 Main Street, Hometown, TX, 43223</h4>
+               <div class="property-card-img">
+                  <div class="bg-img bg-img-1"></div>
+                  <div class="detail-icons">
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                        <p class="detail-name">3 Beds</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                        <p class="detail-name">2 baths</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                        <p class="detail-name">422 sqft</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                        <p class="detail-name">1224 sqft</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="property-ratings">
+                  <div class="rating">
+                     <div class="light light-green"></div>
+                     <p>Price</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Growth</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Rent</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-yellow"></div>
+                     <p>Renovation</p>
+                  </div>
+               </div>
+            </a>
+            <a href="property-details.html" class="property-card">
+               <h4>20085 Main Street, Hometown, TX, 43223</h4>
+               <div class="property-card-img">
+                  <div class="bg-img bg-img-2"></div>
+                  <div class="detail-icons">
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                        <p class="detail-name">3 Beds</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                        <p class="detail-name">2 baths</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                        <p class="detail-name">422 sqft</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                        <p class="detail-name">1224 sqft</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="property-ratings">
+                  <div class="rating">
+                     <div class="light light-green"></div>
+                     <p>Price</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Growth</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Rent</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-yellow"></div>
+                     <p>Renovation</p>
+                  </div>
+               </div>
+            </a>
+            <a href="property-details.html" class="property-card">
+               <h4>20085 Main Street, Hometown, TX, 43223</h4>
+               <div class="property-card-img">
+                  <div class="bg-img bg-img-3"></div>
+                  <div class="detail-icons">
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                        <p class="detail-name">3 Beds</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                        <p class="detail-name">2 baths</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                        <p class="detail-name">422 sqft</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                        <p class="detail-name">1224 sqft</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="property-ratings">
+                  <div class="rating">
+                     <div class="light light-green"></div>
+                     <p>Price</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Growth</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Rent</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-yellow"></div>
+                     <p>Renovation</p>
+                  </div>
+               </div>
+            </a>
+            <a href="property-details.html" class="property-card">
+               <h4>20085 Main Street, Hometown, TX, 43223</h4>
+               <div class="property-card-img">
+                  <div class="bg-img bg-img-4"></div>
+                  <div class="detail-icons">
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                        <p class="detail-name">3 Beds</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                        <p class="detail-name">2 baths</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                        <p class="detail-name">422 sqft</p>
+                     </div>
+                     <div class="detail-icon-group">
+                        <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                        <p class="detail-name">1224 sqft</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="property-ratings">
+                  <div class="rating">
+                     <div class="light light-green"></div>
+                     <p>Price</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Growth</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-orange"></div>
+                     <p>Rent</p>
+                  </div>
+                  <div class="rating">
+                     <div class="light light-yellow"></div>
+                     <p>Renovation</p>
+                  </div>
+               </div>
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <footer id="footer-main">
+      <div class="footer-links">
+         <div class="container">
+            <a href="about.html">About</a>
+            <a href="about-alfred.html">About A.L.F.R.E.D</a>
+            <a href="blog.html">Blog</a>
+            <a href="faq.html">FAQ</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="contact.html">Contact Us</a>
+         </div>
+      </div>
+
+      
+      <div class="container">
+         <p class="footer-info">HomeInvest is committed to ensuring digital accessibility for individuals with disabilities. We are continuously working to improve the
+         accessibility of our web experience for everyone, and we welcome feedback and accommodation requests.
+         If you wish to report an issue or seek an accommodation, please <a href="contact.html">contact us</a>.
+         </p>
+         <div class="footer-icons">
+            <div class="home-invest-icon">
+               <img src="assets/icons/footer-logo.svg" alt="">
+               <h1 class="lead"><span class="dark-blue">Home</span><span class="light-blue">Invest</span></h1>
+            </div>
+            <div class="social-icons">
+               <a href="#"><img src="/assets/icons/social-media-icon-youtube.svg" alt=""></a>
+               <a href="#"><img src="/assets/icons/social-media-icon-twitter.svg" alt=""></a>
+               <a href="#"><img src="/assets/icons/social-media-icon-instagram.svg" alt=""></a>
+               <a href="#"><img src="/assets/icons/social-media-icon-facebook.svg" alt=""></a>
+            </div>
+         </div>
+         <img class="footer-bottom" src="/assets/img/main/footer-illustration.svg" alt="">
+      </div>
+   </footer>
+
+   <script  src="/assets/javascript/navbar.js"></script>
+
+</body>
+</html>
