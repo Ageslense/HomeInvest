@@ -59,6 +59,7 @@ $website-width: 86%;
 
       &.hero-img{
          height: 400px;
+         border-radius: 1rem;
       }
    }
 }
@@ -1203,15 +1204,20 @@ select{
 
       &-a{
 
-         background-image: url(../assets/img/about/evan-dvorkin-K7PrSwM54-I-unsplash.jpg);
+         .hero-img{
+            background-image: url(../assets/img/about-alfred/fran-hogan-j9aikb6tv-M-unsplash.jpg);
+
+         }
       }
    }
 
    #about-alfred{
 
       &-a{
-         background-image: url(../assets/img/main/alfred-illustration.svg);
-         background-size: contain;
+
+         .hero-img{
+            background-image: url(../assets/img/about/evan-dvorkin-K7PrSwM54-I-unsplash.jpg);
+         }
       }
    }
 

@@ -40,6 +40,7 @@
 
 .bg-img.hero-img {
   height: 400px;
+  border-radius: 1rem;
 }
 
 .blog-card {
@@ -1195,12 +1196,11 @@ select:focus {
     width: 100%;
     padding: .4rem;
   }
-  #about-a {
-    background-image: url(../assets/img/about/evan-dvorkin-K7PrSwM54-I-unsplash.jpg);
+  #about-a .hero-img {
+    background-image: url(../assets/img/about-alfred/fran-hogan-j9aikb6tv-M-unsplash.jpg);
   }
-  #about-alfred-a {
-    background-image: url(../assets/img/main/alfred-illustration.svg);
-    background-size: contain;
+  #about-alfred-a .hero-img {
+    background-image: url(../assets/img/about/evan-dvorkin-K7PrSwM54-I-unsplash.jpg);
   }
   #footer-main .footer-links .container {
     -webkit-box-orient: horizontal;
