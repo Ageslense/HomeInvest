@@ -992,6 +992,14 @@ select:focus {
   background-image: url(/assets/img/main/property-cards/nenenan-4.jpg);
 }
 
+#about-a .hero-img {
+  background-image: url(../assets/img/about-alfred/fran-hogan-j9aikb6tv-M-unsplash.jpg);
+}
+
+#about-alfred-a .hero-img {
+  background-image: url(../assets/img/about/evan-dvorkin-K7PrSwM54-I-unsplash.jpg);
+}
+
 #footer-main {
   margin-top: 3rem;
 }
@@ -1195,12 +1203,6 @@ select:focus {
   #properties-a .container .search-buttons .btn {
     width: 100%;
     padding: .4rem;
-  }
-  #about-a .hero-img {
-    background-image: url(../assets/img/about-alfred/fran-hogan-j9aikb6tv-M-unsplash.jpg);
-  }
-  #about-alfred-a .hero-img {
-    background-image: url(../assets/img/about/evan-dvorkin-K7PrSwM54-I-unsplash.jpg);
   }
   #footer-main .footer-links .container {
     -webkit-box-orient: horizontal;

@@ -976,6 +976,28 @@ select{
    }
 }
 
+
+#about{
+
+   &-a{
+
+      .hero-img{
+         background-image: url(../assets/img/about-alfred/fran-hogan-j9aikb6tv-M-unsplash.jpg);
+
+      }
+   }
+}
+
+#about-alfred{
+
+   &-a{
+
+      .hero-img{
+         background-image: url(../assets/img/about/evan-dvorkin-K7PrSwM54-I-unsplash.jpg);
+      }
+   }
+}
+
 #footer{
 
    &-main{
@@ -1200,26 +1222,6 @@ select{
       }
    }
 
-   #about{
-
-      &-a{
-
-         .hero-img{
-            background-image: url(../assets/img/about-alfred/fran-hogan-j9aikb6tv-M-unsplash.jpg);
-
-         }
-      }
-   }
-
-   #about-alfred{
-
-      &-a{
-
-         .hero-img{
-            background-image: url(../assets/img/about/evan-dvorkin-K7PrSwM54-I-unsplash.jpg);
-         }
-      }
-   }
 
    #footer{
 
