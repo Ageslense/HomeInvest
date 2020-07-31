@@ -64,40 +64,6 @@ $website-width: 86%;
    }
 }
 
-.blog-card{
-   padding: 0;
-   overflow: hidden;
-   box-shadow: none;
-
-   .bg-img{
-      height: 200px;
-      width: 100%;
-   }
-
-   .blog-info{
-      display: flex;
-      flex-direction: column;
-      padding: 1rem;
-
-      h2{
-         padding: 1rem 0;
-         font-size: 1.3rem;
-         font-family: light-font;
-      }
-
-      p{
-         line-height: 1.5;
-         font-family: light-font;
-      }
-
-      .btn{
-         width: 60%;
-         margin: 1rem auto;
-      }
-   }
-
-}
-
 .btn{
    display: block;
    background: $gradient-color;
@@ -258,6 +224,41 @@ $website-width: 86%;
       }
 
    }
+}
+
+
+.blog-card{
+   padding: 0;
+   overflow: hidden;
+   box-shadow: none;
+
+   .bg-img{
+      height: 200px;
+      width: 100%;
+   }
+
+   .blog-info{
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+
+      h2{
+         padding: 1rem 0;
+         font-size: 1.3rem;
+         font-family: light-font;
+      }
+
+      p{
+         line-height: 1.5;
+         font-family: light-font;
+      }
+
+      .btn{
+         width: 60%;
+         margin: 1rem auto;
+      }
+   }
+
 }
 
 .property-card-holder{
