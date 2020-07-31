@@ -3,6 +3,16 @@
   text-decoration: underline;
 }
 
+.arrow-up {
+  position: absolute;
+  top: -9px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #1A1A1A;
+}
+
 .bg-dark {
   background: #1A1A1A;
   color: #ffffff;
@@ -26,6 +36,10 @@
 
 .bg-img {
   background: center center /cover no-repeat;
+}
+
+.bg-img.hero-img {
+  height: 400px;
 }
 
 .blog-card {
@@ -194,6 +208,25 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 45px;
+}
+
+.property-card .property-card-img .fav-button {
+  background: #ffffff;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 
 .property-card .property-ratings {
@@ -629,6 +662,9 @@ select:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 105%;
   border-radius: 6px;
@@ -1159,6 +1195,13 @@ select:focus {
     width: 100%;
     padding: .4rem;
   }
+  #about-a {
+    background-image: url(../assets/img/about/evan-dvorkin-K7PrSwM54-I-unsplash.jpg);
+  }
+  #about-alfred-a {
+    background-image: url(../assets/img/main/alfred-illustration.svg);
+    background-size: contain;
+  }
   #footer-main .footer-links .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1196,20 +1239,19 @@ select:focus {
     width: 30%;
     left: 9%;
   }
+  #home-a .container .search-box.search-box-expanded {
+    width: 60%;
+  }
+  #home-a .container .search-box.search-box-expanded .search-box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
   #home-a .container .search-box .search-box-container {
     position: relative;
     overflow: visible;
-  }
-  #home-a .container .search-box .search-box-container #advanced-search-details {
-    position: absolute;
-    left: 110%;
-    top: -1rem;
-    width: 100%;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.85);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-            backdrop-filter: saturate(180%) blur(20px);
-    border-radius: 1rem;
   }
   #property-details-a > .container {
     display: -webkit-box;
@@ -1236,6 +1278,9 @@ select:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 20%;
     margin-top: 0;
     padding-bottom: 0;

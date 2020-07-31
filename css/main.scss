@@ -20,6 +20,17 @@ $website-width: 86%;
    text-decoration: underline;
 }
 
+.arrow-up {
+   position: absolute;
+   top: -9px;
+   width: 0; 
+   height: 0; 
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   
+   border-bottom: 10px solid $dark-color;
+ }
+
 .bg{
 
    &-dark{
@@ -45,6 +56,10 @@ $website-width: 86%;
 
    &-img{
       background: center center /cover no-repeat;
+
+      &.hero-img{
+         height: 400px;
+      }
    }
 }
 
@@ -192,6 +207,20 @@ $website-width: 86%;
             height: 45px;
          }
       }
+
+      .fav-button{
+         background: #ffffff;
+         position: absolute;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         top: 10px;
+         right: 10px;
+         border-radius: 50%;
+         height: 40px;
+         width: 40px;
+
+      }
    }
 
    .property-ratings{
@@ -236,7 +265,6 @@ $website-width: 86%;
    padding-bottom: 1rem;
    grid-gap: 1.5rem;
 }
-
 
 .search-box{
    position: absolute;
@@ -585,6 +613,7 @@ select{
                               .bar-toolkit{
                                  display: flex;
                                  flex-direction: column;
+                                 align-items: center;
                                  position: absolute;
                                  top: 105%;
                                  border-radius: 6px;
@@ -1170,6 +1199,22 @@ select{
       }
    }
 
+   #about{
+
+      &-a{
+
+         background-image: url(../assets/img/about/evan-dvorkin-K7PrSwM54-I-unsplash.jpg);
+      }
+   }
+
+   #about-alfred{
+
+      &-a{
+         background-image: url(../assets/img/main/alfred-illustration.svg);
+         background-size: contain;
+      }
+   }
+
    #footer{
 
       &-main{
@@ -1228,20 +1273,29 @@ select{
                width: 30%;
                left: 9%;
 
+               &.search-box-expanded{
+                  width: 60%;
+                  
+                  .search-box-container{
+                     display: grid;
+                     grid-template-columns: repeat(2, 1fr);
+                     grid-gap: 1rem;
+                  }
+               }
+
                .search-box-container{
                   position: relative;
                   overflow: visible;
 
-                  #advanced-search-details{
-                     position: absolute;
-                     left: 110%;
-                     top: -1rem;
-                     width: 100%;
-                     padding: 1rem;
-                     background: rgba($color: #ffffff, $alpha: 0.85);
-                     backdrop-filter: saturate(180%) blur(20px);
-                     border-radius: 1rem;
-                  }
+                  // #advanced-search-details{
+                  //    left: 100%;
+                  //    width: 100%;
+                  //    // height: 535px;
+                  //    padding: 1rem;
+                  //    background: rgba($color: #ffffff, $alpha: 0.85);
+                  //    backdrop-filter: saturate(180%) blur(20px);
+                  //    border-radius: 0 1rem 1rem 0;
+                  // }
                }
             }
          }
@@ -1277,6 +1331,7 @@ select{
             .property-card-holder{
                display: flex;
                flex-direction: column;
+               justify-content: space-between;
                width: 20%;
                margin-top: 0;
                padding-bottom: 0;

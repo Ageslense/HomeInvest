@@ -2,6 +2,7 @@ let homeHench = {
 	toggleAdvancedSearch: function() {
 		let triggerButton = document.querySelector( '.advanced-search' );
 		let advancedSearchFields = document.getElementById( 'advanced-search-details' );
+		let searchBoxContainer = document.querySelector( '.search-box' );
 
 		triggerButton.addEventListener( 'click', function() {
 			// If the advanced search fields are hidden
@@ -9,9 +10,11 @@ let homeHench = {
 			// 
 			if ( advancedSearchFields.classList.contains( 'hidden' ) ) {
 				advancedSearchFields.classList.remove( 'hidden' );
+				searchBoxContainer.classList.add( 'search-box-expanded' );
 				triggerButton.innerHTML = 'Hide Advanced Search';
 			} else {
 				advancedSearchFields.classList.add( 'hidden' );
+				searchBoxContainer.classList.remove( 'search-box-expanded' );
 				triggerButton.innerHTML = 'Advanced Search';
 			}
 		});
