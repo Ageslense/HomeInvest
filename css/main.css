@@ -333,19 +333,6 @@
   grid-gap: 10px;
 }
 
-.search-box .search-box-container .property-details .search-options-box .search-input {
-  width: 100%;
-  height: 36px;
-  font-size: .75rem;
-  background: none;
-  border: #8A8A8A 1px solid;
-  color: #8A8A8A;
-}
-
-.search-box .search-box-container .property-details .search-options-box .search-input option[disabled] {
-  display: none;
-}
-
 .search-box .search-box-container .property-details .search-options-box input {
   padding: .3rem;
 }
@@ -358,6 +345,18 @@
 .search-box .btn img {
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
+}
+
+.search-input {
+  width: 100%;
+  height: 36px;
+  background: none;
+  border: #8A8A8A 1px solid;
+  color: #8A8A8A;
+}
+
+.search-input option[disabled] {
+  display: none;
 }
 
 .test {
@@ -401,6 +400,10 @@ select option {
 
 select:focus {
   outline: none;
+}
+
+textarea {
+  resize: vertical;
 }
 
 #navbar-box {
@@ -1049,6 +1052,80 @@ select:focus {
   background-image: url(../assets/img/inner-blogs/nenenan-1.jpg);
 }
 
+#contact-a .hero-img {
+  background-image: url(../assets/img/inner-blogs/nenenan-4.jpg);
+}
+
+#contact-c .contact-form-wrapper {
+  padding: 2rem 1rem 1rem;
+}
+
+#contact-c .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact-c .contact-form .search-input {
+  margin-bottom: 1rem;
+}
+
+#contact-c .contact-form textarea {
+  padding-bottom: 5rem;
+}
+
+#contact-d .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact-d .contact-icon-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+  width: 100%;
+  border-bottom: 1px dotted #d1d1d1;
+}
+
+#contact-d .contact-icon-block:last-child {
+  border-bottom: none;
+}
+
+#contact-d .contact-icon-block .contact-icon {
+  height: 30px;
+  margin-bottom: 1rem;
+}
+
+#contact-d .contact-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 #footer-main {
   margin-top: 3rem;
 }
@@ -1268,6 +1345,22 @@ select:focus {
   #blog-a .blog-card-big .bg-img {
     height: 100%;
   }
+  #contact-c .btn {
+    width: 300px;
+  }
+  #contact-d .contact-icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #contact-d .contact-icon-block {
+    border-bottom: none;
+    border-right: 1px dotted #d1d1d1;
+  }
+  #contact-d .contact-icon-block:last-child {
+    border: none;
+  }
   #footer-main .footer-links .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1405,6 +1498,13 @@ select:focus {
   #properties-b .property-card-holder {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  #contact-c .contact-form-wrapper {
+    width: 50%;
+    margin: auto;
+  }
+  #contact-d .contact-icon-block {
+    padding: 2rem;
   }
 }
 
