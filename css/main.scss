@@ -124,18 +124,9 @@ $website-width: 86%;
 }
 
 .property-card{
-   display: none;
    padding: 1rem .5rem;
    border-radius: 1rem;
    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-
-   &:first-child{
-      display: block;
-   }
-
-   &:nth-child(2){
-      display: block;
-   }
    
    h4{
       padding: 0 0 1rem 1rem;
@@ -239,6 +230,7 @@ $website-width: 86%;
    .blog-info{
       display: flex;
       flex-direction: column;
+      justify-content: center;
       padding: 1rem;
 
       h2{
@@ -680,6 +672,18 @@ select{
                background-image: url(/assets/img/main/property-cards/nenenan-4.jpg);
             }
          }
+
+         .property-card{
+            display: none;
+
+            &:first-child{
+               display: block;
+            }
+         
+            &:nth-child(2){
+               display: block;
+            }
+         }
       }
    }
 
@@ -702,6 +706,18 @@ select{
 
          &-4{
             background-image: url(../assets/img/main/blog-cards/nenenan-4.jpg);
+         }
+      }
+
+      .property-card{
+         display: none;
+
+         &:first-child{
+            display: block;
+         }
+      
+         &:nth-child(2){
+            display: block;
          }
       }
 
@@ -976,7 +992,6 @@ select{
    }
 }
 
-
 #about{
 
    &-a{
@@ -994,6 +1009,47 @@ select{
 
       .hero-img{
          background-image: url(../assets/img/about/evan-dvorkin-K7PrSwM54-I-unsplash.jpg);
+      }
+   }
+}
+
+#blog{
+
+   &-a{
+
+      .blog-card{
+         display: flex;
+         flex-direction: column;
+         margin: 1rem;
+      }
+
+      .bg-img{
+
+         &-1{
+            background-image: url(../assets/img/main/blog-cards/nenenan-1.jpg);
+         }
+
+         &-2{
+            background-image: url(../assets/img/main/blog-cards/nenenan-2.jpg);
+         }
+
+         &-3{
+            background-image: url(../assets/img/main/blog-cards/nenenan-3.jpg);
+         }
+
+         &-4{
+            background-image: url(../assets/img/main/blog-cards/nenenan-4.jpg);
+         }
+      }
+   }
+}
+
+#blog-inner{
+
+   &-a{
+
+      .hero-img{
+         background-image: url(../assets/img/inner-blogs/nenenan-1.jpg);
       }
    }
 }
@@ -1222,6 +1278,25 @@ select{
       }
    }
 
+   #blog{
+
+      &-a{
+
+         .blog-card-big{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: 300px;
+
+            &:nth-child(even) > div:first-child{
+               order: 2;
+            }
+
+            .bg-img{
+               height: 100%;
+            }
+         }
+      }
+   }
 
    #footer{
 

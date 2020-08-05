@@ -104,19 +104,10 @@
 }
 
 .property-card {
-  display: none;
   padding: 1rem .5rem;
   border-radius: 1rem;
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-.property-card:first-child {
-  display: block;
-}
-
-.property-card:nth-child(2) {
-  display: block;
 }
 
 .property-card h4 {
@@ -251,6 +242,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 1rem;
 }
 
@@ -713,6 +707,18 @@ select:focus {
   background-image: url(/assets/img/main/property-cards/nenenan-4.jpg);
 }
 
+#home-c .container .property-card {
+  display: none;
+}
+
+#home-c .container .property-card:first-child {
+  display: block;
+}
+
+#home-c .container .property-card:nth-child(2) {
+  display: block;
+}
+
 #home-d .bg-img-1 {
   background-image: url(../assets/img/main/blog-cards/nenenan-1.jpg);
 }
@@ -727,6 +733,18 @@ select:focus {
 
 #home-d .bg-img-4 {
   background-image: url(../assets/img/main/blog-cards/nenenan-4.jpg);
+}
+
+#home-d .property-card {
+  display: none;
+}
+
+#home-d .property-card:first-child {
+  display: block;
+}
+
+#home-d .property-card:nth-child(2) {
+  display: block;
 }
 
 #home-f .container .wrapped-text {
@@ -1000,6 +1018,37 @@ select:focus {
   background-image: url(../assets/img/about/evan-dvorkin-K7PrSwM54-I-unsplash.jpg);
 }
 
+#blog-a .blog-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
+}
+
+#blog-a .bg-img-1 {
+  background-image: url(../assets/img/main/blog-cards/nenenan-1.jpg);
+}
+
+#blog-a .bg-img-2 {
+  background-image: url(../assets/img/main/blog-cards/nenenan-2.jpg);
+}
+
+#blog-a .bg-img-3 {
+  background-image: url(../assets/img/main/blog-cards/nenenan-3.jpg);
+}
+
+#blog-a .bg-img-4 {
+  background-image: url(../assets/img/main/blog-cards/nenenan-4.jpg);
+}
+
+#blog-inner-a .hero-img {
+  background-image: url(../assets/img/inner-blogs/nenenan-1.jpg);
+}
+
 #footer-main {
   margin-top: 3rem;
 }
@@ -1203,6 +1252,21 @@ select:focus {
   #properties-a .container .search-buttons .btn {
     width: 100%;
     padding: .4rem;
+  }
+  #blog-a .blog-card-big {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    height: 300px;
+  }
+  #blog-a .blog-card-big:nth-child(even) > div:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #blog-a .blog-card-big .bg-img {
+    height: 100%;
   }
   #footer-main .footer-links .container {
     -webkit-box-orient: horizontal;
