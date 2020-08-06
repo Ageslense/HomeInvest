@@ -1124,6 +1124,78 @@ textarea{
    }
 }
 
+#privacy{
+
+   &-a{
+
+      h2{
+         padding-top: 1rem;
+      }
+
+      ul{
+         margin: .5rem 0 0 1rem;
+      }
+
+      a{
+         color: steelblue;
+         text-decoration: underline;
+      }
+   }
+}
+
+#terms{
+
+   &-a{
+
+      
+      h2{
+         padding-top: 1rem;
+      }
+
+      ul{
+         margin: .5rem 0 0 1rem;
+      }
+
+      a{
+         color: steelblue;
+         text-decoration: underline;
+      }
+   }
+}
+
+#faq{
+
+   &-a{
+      .property-card{
+         padding: 0;
+         
+      }
+
+      .faq-question-box{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 1rem;
+         border-bottom: 1px solid #f4f4f4;
+      }
+
+      .faq-answer-box{
+         padding: 1rem;
+         display: none;
+      }
+
+      .answer-opener{
+         height: 10px;
+         margin-right: 1rem;
+      }
+
+      .faq-answer-box{
+         background: #f4f4f4;
+         height: 100%;
+      }
+   }
+}
+
 #footer{
 
    &-main{
@@ -1438,6 +1510,10 @@ textarea{
 
          .burger-logo{
             display: none;
+         }
+
+         .btn{
+            margin: 0;
          }
       }
    }

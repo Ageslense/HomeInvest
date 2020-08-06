@@ -1126,6 +1126,65 @@ textarea {
           flex-direction: column;
 }
 
+#privacy-a h2 {
+  padding-top: 1rem;
+}
+
+#privacy-a ul {
+  margin: .5rem 0 0 1rem;
+}
+
+#privacy-a a {
+  color: steelblue;
+  text-decoration: underline;
+}
+
+#terms-a h2 {
+  padding-top: 1rem;
+}
+
+#terms-a ul {
+  margin: .5rem 0 0 1rem;
+}
+
+#terms-a a {
+  color: steelblue;
+  text-decoration: underline;
+}
+
+#faq-a .property-card {
+  padding: 0;
+}
+
+#faq-a .faq-question-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+#faq-a .faq-answer-box {
+  padding: 1rem;
+  display: none;
+}
+
+#faq-a .answer-opener {
+  height: 10px;
+  margin-right: 1rem;
+}
+
+#faq-a .faq-answer-box {
+  background: #f4f4f4;
+  height: 100%;
+}
+
 #footer-main {
   margin-top: 3rem;
 }
@@ -1393,6 +1452,9 @@ textarea {
   }
   #navbar-box .navbar .burger-logo {
     display: none;
+  }
+  #navbar-box .navbar .btn {
+    margin: 0;
   }
   #home-a .container .search-box {
     width: 30%;
