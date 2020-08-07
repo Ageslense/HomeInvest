@@ -50,8 +50,24 @@ $website-width: 86%;
       .info-text{
          font-family: light-font;
          font-size: 1.3rem;
-         line-height: 1.5;
+         line-height: 1.4;
       }
+
+      .about-text{
+
+         p{
+            font-family: light-font;
+            line-height: 1.4;
+         }
+
+         li{
+            font-family: light-font;
+
+            margin-bottom: .5rem;
+         }
+      }
+
+
    }
 
    &-img{
@@ -107,6 +123,10 @@ $website-width: 86%;
    margin-top: $navbar-height + 5px;
 }
 
+.last-section{
+   padding-bottom: 3rem;
+}
+
 .hidden{
    display: none !important;
 }
@@ -121,6 +141,46 @@ $website-width: 86%;
       .light-blue{
          color: $light-blue-color;
       }
+}
+
+.login{
+   min-height: 80vh;
+
+   .bg-img{
+      height: 40vh;
+   }
+
+   .lead{
+      margin-top: 1rem;
+   }
+
+   .forgot-password{
+      color: $primary-color;
+      text-decoration: underline;
+   }
+
+   .search-input{
+      margin-bottom: 1rem;
+   }
+
+   .btn{
+      font-family: bolf-family;
+      max-width: 50%;
+   }
+
+   .sign-up-lead{
+      padding-top: .8rem;
+
+      a{
+         color: $primary-color;
+         text-decoration: underline;
+      }
+   }
+
+   .forgot-password-info{
+      font-family: light-font;
+      padding-bottom: 10px;
+   }
 }
 
 .property-card{
@@ -1130,6 +1190,7 @@ textarea{
 
       h2{
          padding-top: 1rem;
+         margin-top: 12px;
       }
 
       ul{
@@ -1137,7 +1198,7 @@ textarea{
       }
 
       a{
-         color: steelblue;
+         color: $primary-color;
          text-decoration: underline;
       }
    }
@@ -1150,6 +1211,7 @@ textarea{
       
       h2{
          padding-top: 1rem;
+         margin-top: 12px;
       }
 
       ul{
@@ -1157,7 +1219,7 @@ textarea{
       }
 
       a{
-         color: steelblue;
+         color: $primary-color;
          text-decoration: underline;
       }
    }
@@ -1196,10 +1258,40 @@ textarea{
    }
 }
 
+#login{
+
+   &-a{
+
+      .bg-img{
+         background-image: url(../assets/img/main/hero-image.jpg);
+      }
+   }
+}
+
+#sign-up{
+
+   &-a{
+
+      .bg-img{
+         background-image: url(../assets/img/main/blog-cards/nenenan-3.jpg);
+      }
+   }
+}
+
+#forgot-password{
+
+   &-a{
+
+      .bg-img{
+
+         background-image: url(../assets/img/main/blog-cards/nenenan-4.jpg);
+      }
+   }
+}
+
 #footer{
 
    &-main{
-      margin-top: 3rem;
 
       .footer-links{
          border-top: 1px solid #d1d1d1;
@@ -1285,6 +1377,24 @@ textarea{
 @media screen and (min-width: 768px){
 
    // Utilities
+
+   .login{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+   
+      .bg-img{
+         width: 100%;
+         height: 100%;
+      }
+
+      .login-form-wrap{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      }
+   }
+
    .property-card-holder{
       grid-template-columns: repeat(2, 1fr);
 

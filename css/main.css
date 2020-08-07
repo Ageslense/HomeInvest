@@ -31,7 +31,17 @@
 .bg-white .info-text {
   font-family: light-font;
   font-size: 1.3rem;
-  line-height: 1.5;
+  line-height: 1.4;
+}
+
+.bg-white .about-text p {
+  font-family: light-font;
+  line-height: 1.4;
+}
+
+.bg-white .about-text li {
+  font-family: light-font;
+  margin-bottom: .5rem;
 }
 
 .bg-img {
@@ -87,6 +97,10 @@
   margin-top: 77px;
 }
 
+.last-section {
+  padding-bottom: 3rem;
+}
+
 .hidden {
   display: none !important;
 }
@@ -101,6 +115,46 @@
 
 .lead .light-blue {
   color: #23F8DE;
+}
+
+.login {
+  min-height: 80vh;
+}
+
+.login .bg-img {
+  height: 40vh;
+}
+
+.login .lead {
+  margin-top: 1rem;
+}
+
+.login .forgot-password {
+  color: #0788E9;
+  text-decoration: underline;
+}
+
+.login .search-input {
+  margin-bottom: 1rem;
+}
+
+.login .btn {
+  font-family: bolf-family;
+  max-width: 50%;
+}
+
+.login .sign-up-lead {
+  padding-top: .8rem;
+}
+
+.login .sign-up-lead a {
+  color: #0788E9;
+  text-decoration: underline;
+}
+
+.login .forgot-password-info {
+  font-family: light-font;
+  padding-bottom: 10px;
 }
 
 .property-card {
@@ -1128,6 +1182,7 @@ textarea {
 
 #privacy-a h2 {
   padding-top: 1rem;
+  margin-top: 12px;
 }
 
 #privacy-a ul {
@@ -1135,12 +1190,13 @@ textarea {
 }
 
 #privacy-a a {
-  color: steelblue;
+  color: #0788E9;
   text-decoration: underline;
 }
 
 #terms-a h2 {
   padding-top: 1rem;
+  margin-top: 12px;
 }
 
 #terms-a ul {
@@ -1148,7 +1204,7 @@ textarea {
 }
 
 #terms-a a {
-  color: steelblue;
+  color: #0788E9;
   text-decoration: underline;
 }
 
@@ -1185,8 +1241,16 @@ textarea {
   height: 100%;
 }
 
-#footer-main {
-  margin-top: 3rem;
+#login-a .bg-img {
+  background-image: url(../assets/img/main/hero-image.jpg);
+}
+
+#sign-up-a .bg-img {
+  background-image: url(../assets/img/main/blog-cards/nenenan-3.jpg);
+}
+
+#forgot-password-a .bg-img {
+  background-image: url(../assets/img/main/blog-cards/nenenan-4.jpg);
 }
 
 #footer-main .footer-links {
@@ -1295,6 +1359,29 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
+  .login {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .login .bg-img {
+    width: 100%;
+    height: 100%;
+  }
+  .login .login-form-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .property-card-holder {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
