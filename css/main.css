@@ -1282,6 +1282,10 @@ textarea {
   background-image: url(../assets/img/main/blog-cards/nenenan-3.jpg);
 }
 
+#forgot-password-a {
+  min-height: 0;
+}
+
 #forgot-password-a .bg-img {
   background-image: url(../assets/img/main/blog-cards/nenenan-4.jpg);
 }
@@ -1602,13 +1606,10 @@ textarea {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-  }
-  #home-a .container .search-box.search-box-expanded .property-details {
-    padding-top: 0;
+    grid-gap: 1rem 2rem;
   }
   #home-a .container .search-box.search-box-expanded .btn {
-    width: 50%;
+    width: calc(50% - 1rem);
     margin: 1rem 0;
   }
   #home-a .container .search-box .search-box-container {

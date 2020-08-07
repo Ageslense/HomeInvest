@@ -366,6 +366,7 @@ $website-width: 86%;
          }
       }
    }
+
    .btn{
       width: 100%;
       font-size: 1.5rem;
@@ -1308,6 +1309,8 @@ textarea{
 
          background-image: url(../assets/img/main/blog-cards/nenenan-4.jpg);
       }
+
+      min-height: 0;
    }
 }
 
@@ -1691,15 +1694,11 @@ textarea{
                   .search-box-container{
                      display: grid;
                      grid-template-columns: repeat(2, 1fr);
-                     grid-gap: 1rem;
-                  }
-
-                  .property-details{
-                     padding-top: 0;
+                     grid-gap: 1rem 2rem;
                   }
 
                   .btn{
-                     width: 50%;
+                     width: calc(50% - 1rem);
                      margin: 1rem 0;
                   }
                }
