@@ -1253,6 +1253,14 @@ textarea {
   background-image: url(../assets/img/main/blog-cards/nenenan-4.jpg);
 }
 
+#footer-main {
+  margin-top: 3rem;
+}
+
+#footer-main .footer-login {
+  margin-top: 0;
+}
+
 #footer-main .footer-links {
   border-top: 1px solid #d1d1d1;
   border-bottom: 1px solid #d1d1d1;
