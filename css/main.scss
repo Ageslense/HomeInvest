@@ -1417,6 +1417,26 @@ textarea{
             }
          }
       }
+
+      &-c{
+
+         .container{
+
+            .property-card{
+               display: block;
+            }
+         }
+      }
+
+      &-d{
+
+         .container{
+            
+            .property-card{
+               display: block;
+            }
+         }
+      }
    }
 
    #property-details{

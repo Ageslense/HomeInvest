@@ -1396,6 +1396,12 @@ textarea {
         grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
   }
+  #home-c .container .property-card {
+    display: block;
+  }
+  #home-d .container .property-card {
+    display: block;
+  }
   #property-details-a .container .property-card .property-card-img.property-slider-bottom .bg-img {
     height: 100px;
   }
