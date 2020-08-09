@@ -588,11 +588,14 @@ textarea{
    .member-only{
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
-
+      justify-content: center;
       border-bottom: 1px solid $light-color;
       padding: 1rem;
       width: 80%;
+
+      p{
+         padding-left: 1rem;
+      }
    }
 
    .sidemenu-box {
