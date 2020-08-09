@@ -313,6 +313,63 @@ $website-width: 86%;
 
 }
 
+.notifications-box{
+   max-width: 400px;
+   height: 84vh;
+   overflow: auto;
+   margin: auto;
+   background: white;
+   padding: 1rem 0 0;
+   border-radius: 1rem;
+
+   & > .lead{
+      padding-left: 1rem;
+   }
+}
+
+.notification{
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid $light-color;
+   padding: 1rem;
+
+   &:hover{
+      background: #f4f4f4;
+
+      .bg-white{
+         background: inherit;
+      }
+
+      .icon-box{
+         background: #ffffff;
+      }
+   }
+
+   &:last-child{
+      border-bottom: none;
+   }
+
+   .lead{
+      font-size: 1rem;
+      padding-bottom: 5px;
+   }
+
+   .icon-box{
+      background: #f4f4f4;
+      border-radius: 50%;
+      width: 40px ;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+   }
+
+   &-text{
+      width: calc(100% - 56px);
+   }
+}
+
 .property-card-holder{
    display: grid;
    grid-template-columns: 1fr;
@@ -499,6 +556,10 @@ textarea{
          .navbar-item.current{
             color: $secondary-text-color;
          }
+
+         .navbar-item > img{
+            height: 1.5rem;
+         }
       }
 
       .burger-logo{
@@ -514,6 +575,24 @@ textarea{
             }
          }
       }
+   }
+
+   .profile-link{
+      position: relative;
+      background: url(../assets/img/main/user.png) center center /cover no-repeat;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+   }
+
+   .member-only{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      border-bottom: 1px solid $light-color;
+      padding: 1rem;
+      width: 80%;
    }
 
    .sidemenu-box {
@@ -557,6 +636,8 @@ textarea{
                }
             }
          }
+
+        
    }
    
    &.sidemenu-opened .sidemenu-box {
@@ -588,6 +669,12 @@ textarea{
             }
          }
       }
+   }
+
+   .logout-link{
+      // position: absolute;
+      // bottom: 80px;
+      color: $secondary-text-color !important;
    }
 }
 
@@ -1656,15 +1743,20 @@ textarea{
 
          &-items{
             display: flex;
-            width: 50%;
+            width: 60%;
             justify-content: space-between;
             align-items: center;
 
             .profile-link{
+               position: relative;
                background: url(../assets/img/main/user.png) center center /cover no-repeat;
                width: 30px;
                height: 30px;
                border-radius: 50%;
+            }
+
+            .login-link{
+               display: none;
             }
          }
 
@@ -1674,6 +1766,94 @@ textarea{
 
          .btn{
             margin: 0;
+         }
+
+         .arrow-up{
+            border-bottom-color: #ffffff;
+            margin: auto;
+         }
+
+         .profile-button{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+
+         .notifications-bell{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+      }
+
+      .notifications-box{
+         position: absolute;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: left;
+         top: 70px;
+         width: 200px;
+         height: auto;
+         overflow: visible;
+
+         > .lead{
+            font-size: 1rem;
+            align-self: flex-start;
+         }
+
+         .see-all-notifications{
+            font-size: .6rem;
+            padding: .5rem 0;
+            color: $primary-color;
+            text-decoration: underline;
+         }
+      }
+
+      .account-tab{
+         padding-top: 0 ;
+         right: -20px;
+
+         .arrow-up{
+            position: absolute;
+            right: 25px;
+         }
+      }
+
+      .profile-links{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+
+         a{
+            padding: 1rem;;
+            width: 100%;
+            border-bottom: 1px solid $light-color;
+
+            &:last-child{
+               border-bottom: none;
+            }
+
+            &.logout-link{
+               color: $secondary-text-color;
+            }
+
+            &:hover{
+               background: #f4f4f4;
+            }
+         }
+
+      }
+
+      .notification{
+         
+         .lead{
+            font-size: .6rem;
+         }
+
+         p{
+            font-size: .6rem;
          }
       }
    }
