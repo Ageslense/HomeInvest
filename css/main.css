@@ -277,6 +277,32 @@
   font-size: .8rem;
 }
 
+.detail-icons {
+  width: 100%;
+  padding: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.detail-icons .detail-icon-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 45px;
+}
+
 .blog-card {
   padding: 0;
   overflow: hidden;
@@ -393,6 +419,34 @@
       grid-template-columns: 1fr;
   padding-bottom: 1rem;
   grid-gap: 1.5rem;
+}
+
+.property-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  border-bottom: 1px #E9E9E9 solid;
+  padding-bottom: 2rem;
+}
+
+.property-info-pair {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5;
+}
+
+.property-info-pair .property-info-name {
+  font-family: bold-font;
+  margin-right: .3rem;
+}
+
+.property-info-pair .property-info-icon {
+  padding: .5rem .5rem .5rem 0;
 }
 
 .search-box {
@@ -1392,6 +1446,48 @@ textarea {
   background-image: url(../assets/img/main/blog-cards/nenenan-4.jpg);
 }
 
+#watchlist-a .sort-by {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 10px;
+}
+
+#watchlist-a .property-card {
+  display: block;
+}
+
+#watchlist-a .bg-img-1 {
+  background-image: url(/assets/img/main/property-cards/nenenan-1.jpg);
+}
+
+#watchlist-a .bg-img-2 {
+  background-image: url(/assets/img/main/property-cards/nenenan-2.jpg);
+}
+
+#watchlist-a .bg-img-3 {
+  background-image: url(/assets/img/main/property-cards/nenenan-3.jpg);
+}
+
+#watchlist-a .bg-img-4 {
+  background-image: url(/assets/img/main/property-cards/nenenan-4.jpg);
+}
+
+#watchlist-a .watchlist-details .property-info {
+  display: none;
+}
+
+#watchlist-a .watchlist-details .detail-icons {
+  display: none;
+}
+
+#watchlist-a .watchlist-details .lead {
+  display: none;
+}
+
 #footer-main {
   margin-top: 3rem;
 }
@@ -1659,6 +1755,41 @@ textarea {
   }
   #contact-d .contact-icon-block:last-child {
     border: none;
+  }
+  #watchlist-a .property-card-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #watchlist-a .property-card-img .detail-icons {
+    display: none;
+  }
+  #watchlist-a .property-card-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  #watchlist-a .property-card-wrapper .bg-img {
+    border-radius: 1rem;
+    height: 100%;
+  }
+  #watchlist-a .watchlist-details .property-info, #watchlist-a .watchlist-details .lead {
+    display: block;
+  }
+  #watchlist-a .watchlist-details .detail-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #E9E9E9;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   #footer-main .footer-links .container {
     -webkit-box-orient: horizontal;
@@ -1958,6 +2089,12 @@ textarea {
   #property-details-b .container .property-info {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  #watchlist-a .property-info {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 /*# sourceMappingURL=main.css.map */

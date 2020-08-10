@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css/main.css">
+   <link rel="stylesheet" href="/css/fonts.css">
+   <link rel="stylesheet" href="/css/properties.css">
+   <title>Home Invest - Properties</title>
+</head>
+<body>
+
+   <nav id="navbar-box">
+      <div class="container">
+         <div class="navbar">
+            <div class="navbar-logo"></div>
+            <ul class="navbar-items">
+               <a href="index.html" class="navbar-item">Home</a>
+               <a href="properties.html" class="navbar-item current">Properties</a>
+               <a href="about.html" class="navbar-item">About</a>
+               <a href="alfred.html" class="navbar-item">A.L.F.R.E.D</a>
+               <a href="contact.html" class="navbar-item">Contact Us</a>
+               <a href="login.html" class="navbar-item btn btn-rounded login-link">Login</a>
+               <div class="navbar-item profile-button">
+                  <div class="profile-link"></div>
+                 
+                  <div class="notifications-box property-card account-tab">
+                     <div class="arrow-up drop-shadow"></div>
+                     <div class="profile-links">
+                        <a href="account.html">My Account</a>
+                        <a href="watchlist.html">Watchlist</a>
+                        <a href="privacy.html" class="">Privacy</a>
+                        <a href="terms.html" class="">Terms</a>
+                        <a href="#" class="logout-link">Logout</a>
+                     </div>
+
+                  </div>
+               </div>
+            </ul>
+            <div class="burger-logo">
+               <div class="burger-logo-line"></div>
+               <div class="burger-logo-line"></div>
+               <div class="burger-logo-line"></div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="sidemenu-box">
+         <div class="sidemenu">
+            <div class="sidemenu-item-box">
+               <a href="index.html" class="sidemenu-item">Home</a>
+               <a href="properties.html" class="sidemenu-item ">Properties</a>
+               <a href="about.html" class="sidemenu-item">About</a>
+               <a href="alfred.html" class="sidemenu-item">A.L.F.R.E.D</a>
+               <a href="contact.html" class="sidemenu-item">Contact Us</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+   <!-- Search -->
+
+   <div id="watchlist-a" class="first-section">
+      <div class="container">
+         <div class="sort-by">
+            <p>
+               Sort By:
+            </p>
+            <select class="sort-by-input" name="sort-by" id="sort-by">
+               <option value="price">Highest Price</option>
+               <option value="price-">Lowest Price</option>
+               <option value="sqft">Highest Square Feet</option>
+            </select>
+         </div>
+         <div class="property-card-holder">
+            <a href="property-details.html" class="property-card">
+               <h4>20085 Main Street, Hometown, TX, 43223</h4>
+               <div class="property-card-wrapper">
+                  <div class="property-card-img">
+                     <div class="bg-img bg-img-1"></div>
+                     <div class="detail-icons">
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                           <p class="detail-name">3 Beds</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                           <p class="detail-name">2 baths</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                           <p class="detail-name">422 sqft</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                           <p class="detail-name">1224 sqft</p>
+                        </div>
+                     </div>
+                     <div class="fav-button">
+                        <img src="/assets/icons/heart.svg" alt="">
+                     </div>
+                  </div>
+                  <div class="watchlist-details">
+                     <div class="info-text">
+                        <h1 class="lead">Details</h1>
+                        <div class="property-info">
+                           <div class="property-info-pair">
+                              <p class="property-info-name"> Sales Status:</p>
+                              <p class="property-info-value">For Sale</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name"> Views:</p>
+                              <p class="property-info-value">Whole Bunch of Nothin'</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name"> Year Built:</p>
+                              <p class="property-info-value">1923</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Description:</p>
+                              <p class="property-info-value">Ranch on ranch</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Stories:</p>
+                              <p class="property-info-value">1.00</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Property Type:</p>
+                              <p class="property-info-value">Single Family</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Amenities:</p>
+                              <p class="property-info-value">Watering Hole</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Heating:</p>
+                              <p class="property-info-value">Electric</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Parking:</p>
+                              <p class="property-info-value">Port</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Cooling:</p>
+                              <p class="property-info-value">Window Units</p>
+                           </div>
+                        </div>
+                     </div>
+   
+                     <div class="detail-icons">
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                           <p class="detail-name">3 Beds</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                           <p class="detail-name">2 baths</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                           <p class="detail-name">422 sqft</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                           <p class="detail-name">1224 sqft</p>
+                        </div>
+                     </div>
+   
+                     <div class="property-ratings">
+                        <div class="rating">
+                           <div class="light light-green"></div>
+                           <p>Price</p>
+                        </div>
+                        <div class="rating">
+                           <div class="light light-orange"></div>
+                           <p>Growth</p>
+                        </div>
+                        <div class="rating">
+                           <div class="light light-orange"></div>
+                           <p>Rent</p>
+                        </div>
+                        <div class="rating">
+                           <div class="light light-yellow"></div>
+                           <p>Renovation</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </a>
+            <a href="property-details.html" class="property-card">
+               <h4>20085 Main Street, Hometown, TX, 43223</h4>
+               <div class="property-card-wrapper">
+                  <div class="property-card-img">
+                     <div class="bg-img bg-img-2"></div>
+                     <div class="detail-icons">
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                           <p class="detail-name">3 Beds</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                           <p class="detail-name">2 baths</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                           <p class="detail-name">422 sqft</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                           <p class="detail-name">1224 sqft</p>
+                        </div>
+                     </div>
+                     <div class="fav-button">
+                        <img src="/assets/icons/heart.svg" alt="">
+                     </div>
+                  </div>
+                  <div class="watchlist-details">
+                     <div class="info-text">
+                        <h1 class="lead">Details</h1>
+                        <div class="property-info">
+                           <div class="property-info-pair">
+                              <p class="property-info-name"> Sales Status:</p>
+                              <p class="property-info-value">For Sale</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name"> Views:</p>
+                              <p class="property-info-value">Whole Bunch of Nothin'</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name"> Year Built:</p>
+                              <p class="property-info-value">1923</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Description:</p>
+                              <p class="property-info-value">Ranch on ranch</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Stories:</p>
+                              <p class="property-info-value">1.00</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Property Type:</p>
+                              <p class="property-info-value">Single Family</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Amenities:</p>
+                              <p class="property-info-value">Watering Hole</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Heating:</p>
+                              <p class="property-info-value">Electric</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Parking:</p>
+                              <p class="property-info-value">Port</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Cooling:</p>
+                              <p class="property-info-value">Window Units</p>
+                           </div>
+                        </div>
+                     </div>
+   
+                     <div class="detail-icons">
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                           <p class="detail-name">3 Beds</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                           <p class="detail-name">2 baths</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                           <p class="detail-name">422 sqft</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                           <p class="detail-name">1224 sqft</p>
+                        </div>
+                     </div>
+   
+                     <div class="property-ratings">
+                        <div class="rating">
+                           <div class="light light-green"></div>
+                           <p>Price</p>
+                        </div>
+                        <div class="rating">
+                           <div class="light light-orange"></div>
+                           <p>Growth</p>
+                        </div>
+                        <div class="rating">
+                           <div class="light light-orange"></div>
+                           <p>Rent</p>
+                        </div>
+                        <div class="rating">
+                           <div class="light light-yellow"></div>
+                           <p>Renovation</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </a>
+            <a href="property-details.html" class="property-card">
+               <h4>20085 Main Street, Hometown, TX, 43223</h4>
+               <div class="property-card-wrapper">
+                  <div class="property-card-img">
+                     <div class="bg-img bg-img-3"></div>
+                     <div class="detail-icons">
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                           <p class="detail-name">3 Beds</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                           <p class="detail-name">2 baths</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                           <p class="detail-name">422 sqft</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                           <p class="detail-name">1224 sqft</p>
+                        </div>
+                     </div>
+                     <div class="fav-button">
+                        <img src="/assets/icons/heart.svg" alt="">
+                     </div>
+                  </div>
+                  <div class="watchlist-details">
+                     <div class="info-text">
+                        <h1 class="lead">Details</h1>
+                        <div class="property-info">
+                           <div class="property-info-pair">
+                              <p class="property-info-name"> Sales Status:</p>
+                              <p class="property-info-value">For Sale</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name"> Views:</p>
+                              <p class="property-info-value">Whole Bunch of Nothin'</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name"> Year Built:</p>
+                              <p class="property-info-value">1923</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Description:</p>
+                              <p class="property-info-value">Ranch on ranch</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Stories:</p>
+                              <p class="property-info-value">1.00</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Property Type:</p>
+                              <p class="property-info-value">Single Family</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Amenities:</p>
+                              <p class="property-info-value">Watering Hole</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Heating:</p>
+                              <p class="property-info-value">Electric</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Parking:</p>
+                              <p class="property-info-value">Port</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Cooling:</p>
+                              <p class="property-info-value">Window Units</p>
+                           </div>
+                        </div>
+                     </div>
+   
+                     <div class="detail-icons">
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                           <p class="detail-name">3 Beds</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                           <p class="detail-name">2 baths</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                           <p class="detail-name">422 sqft</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                           <p class="detail-name">1224 sqft</p>
+                        </div>
+                     </div>
+   
+                     <div class="property-ratings">
+                        <div class="rating">
+                           <div class="light light-green"></div>
+                           <p>Price</p>
+                        </div>
+                        <div class="rating">
+                           <div class="light light-orange"></div>
+                           <p>Growth</p>
+                        </div>
+                        <div class="rating">
+                           <div class="light light-orange"></div>
+                           <p>Rent</p>
+                        </div>
+                        <div class="rating">
+                           <div class="light light-yellow"></div>
+                           <p>Renovation</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </a>
+            <a href="property-details.html" class="property-card">
+               <h4>20085 Main Street, Hometown, TX, 43223</h4>
+               <div class="property-card-wrapper">
+                  <div class="property-card-img">
+                     <div class="bg-img bg-img-4"></div>
+                     <div class="detail-icons">
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                           <p class="detail-name">3 Beds</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                           <p class="detail-name">2 baths</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                           <p class="detail-name">422 sqft</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                           <p class="detail-name">1224 sqft</p>
+                        </div>
+                     </div>
+                     <div class="fav-button">
+                        <img src="/assets/icons/heart.svg" alt="">
+                     </div>
+                  </div>
+                  <div class="watchlist-details">
+                     <div class="info-text">
+                        <h1 class="lead">Details</h1>
+                        <div class="property-info">
+                           <div class="property-info-pair">
+                              <p class="property-info-name"> Sales Status:</p>
+                              <p class="property-info-value">For Sale</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name"> Views:</p>
+                              <p class="property-info-value">Whole Bunch of Nothin'</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name"> Year Built:</p>
+                              <p class="property-info-value">1923</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Description:</p>
+                              <p class="property-info-value">Ranch on ranch</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Stories:</p>
+                              <p class="property-info-value">1.00</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Property Type:</p>
+                              <p class="property-info-value">Single Family</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Amenities:</p>
+                              <p class="property-info-value">Watering Hole</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Heating:</p>
+                              <p class="property-info-value">Electric</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Parking:</p>
+                              <p class="property-info-value">Port</p>
+                           </div>
+                           <div class="property-info-pair">
+                              <p class="property-info-name">Cooling:</p>
+                              <p class="property-info-value">Window Units</p>
+                           </div>
+                        </div>
+                     </div>
+   
+                     <div class="detail-icons">
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bed.svg" alt="">
+                           <p class="detail-name">3 Beds</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-bath.svg" alt="">
+                           <p class="detail-name">2 baths</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-sgft.svg" alt="">
+                           <p class="detail-name">422 sqft</p>
+                        </div>
+                        <div class="detail-icon-group">
+                           <img class="detail-icon" src="/assets/icons/overlay-icon-land.svg" alt="">
+                           <p class="detail-name">1224 sqft</p>
+                        </div>
+                     </div>
+   
+                     <div class="property-ratings">
+                        <div class="rating">
+                           <div class="light light-green"></div>
+                           <p>Price</p>
+                        </div>
+                        <div class="rating">
+                           <div class="light light-orange"></div>
+                           <p>Growth</p>
+                        </div>
+                        <div class="rating">
+                           <div class="light light-orange"></div>
+                           <p>Rent</p>
+                        </div>
+                        <div class="rating">
+                           <div class="light light-yellow"></div>
+                           <p>Renovation</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </a>
+    
+         </div>
+      </div>
+   </div>
+
+   <footer id="footer-main">
+      <div class="footer-links">
+         <div class="container">
+            <a href="about.html">About</a>
+            <a href="about-alfred.html">About A.L.F.R.E.D</a>
+            <a href="blog.html">Blog</a>
+            <a href="faq.html">FAQ</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="contact.html">Contact Us</a>
+         </div>
+      </div>
+
+      
+      <div class="container">
+         <p class="footer-info">HomeInvest is committed to ensuring digital accessibility for individuals with disabilities. We are continuously working to improve the
+         accessibility of our web experience for everyone, and we welcome feedback and accommodation requests.
+         If you wish to report an issue or seek an accommodation, please <a href="contact.html">contact us</a>.
+         </p>
+         <div class="footer-icons">
+            <div class="home-invest-icon">
+               <img src="assets/icons/footer-logo.svg" alt="">
+               <h1 class="lead"><span class="dark-blue">Home</span><span class="light-blue">Invest</span></h1>
+            </div>
+            <div class="social-icons">
+               <a href="#"><img src="/assets/icons/social-media-icon-youtube.svg" alt=""></a>
+               <a href="#"><img src="/assets/icons/social-media-icon-twitter.svg" alt=""></a>
+               <a href="#"><img src="/assets/icons/social-media-icon-instagram.svg" alt=""></a>
+               <a href="#"><img src="/assets/icons/social-media-icon-facebook.svg" alt=""></a>
+            </div>
+         </div>
+         <img class="footer-bottom" src="/assets/img/main/footer-illustration.svg" alt="">
+      </div>
+   </footer>
+
+   <script  src="/assets/javascript/navbar.js"></script>
+
+</body>
+</html>
