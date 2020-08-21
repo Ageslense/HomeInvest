@@ -1866,6 +1866,10 @@ textarea{
 @media screen and (min-width: 1024px){
 
    // Utilities
+   .contact-form-wrapper{
+      width: 50%;
+      margin: auto;
+   }
 
    // Site Stylings
    #navbar-box{
@@ -2141,10 +2145,7 @@ textarea{
 
       &-c{
 
-         .contact-form-wrapper{
-            width: 50%;
-            margin: auto;
-         }
+        
       }
 
       &-d{

@@ -1,0 +1,53 @@
+.property-card {
+  padding: 1rem;
+}
+
+.account-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.account-data-text h3 {
+  padding-bottom: .5rem;
+}
+
+.account-data-text p {
+  font-family: light-font;
+}
+
+.account-data:last-child {
+  border-bottom: none;
+}
+
+.account-data .btn {
+  width: 70px;
+}
+
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: .5rem;
+}
+
+.checkbox input {
+  margin-right: .5rem;
+}
+
+.submit {
+  width: 200px;
+  font-family: bold-font;
+}
+
+@media screen and (min-width: 1024px) {
+  .property-card {
+    max-width: 50%;
+  }
+}
+/*# sourceMappingURL=account.css.map */

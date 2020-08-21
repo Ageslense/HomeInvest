@@ -1803,6 +1803,10 @@ textarea {
 }
 
 @media screen and (min-width: 1024px) {
+  .contact-form-wrapper {
+    width: 50%;
+    margin: auto;
+  }
   #navbar-box .navbar-items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2038,10 +2042,6 @@ textarea {
   #properties-b .property-card-holder {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-  }
-  #contact-c .contact-form-wrapper {
-    width: 50%;
-    margin: auto;
   }
   #contact-d .contact-icon-block {
     padding: 2rem;

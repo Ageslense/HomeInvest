@@ -1,0 +1,48 @@
+.property-card{
+   padding: 1rem;
+}
+
+.account-data{
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem 0;
+   border-bottom: 1px solid #f4f4f4;
+
+   &-text{
+      h3{
+         padding-bottom: .5rem;
+      }
+
+      p{
+         font-family: light-font;
+      }
+   }
+   
+   &:last-child{
+      border-bottom: none;
+   }
+
+   .btn{
+      width: 70px ;
+   }
+}
+
+.checkbox{
+   display: flex;
+   padding-bottom: .5rem;
+
+   input{
+      margin-right: .5rem;
+   }
+}
+
+.submit{
+   width: 200px;
+   font-family: bold-font;
+}
+
+@media screen and (min-width: 1024px){
+   .property-card{
+      max-width: 50%;
+   }
+}
