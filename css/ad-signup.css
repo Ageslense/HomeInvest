@@ -1,0 +1,27 @@
+.contact-form-wrapper {
+  padding: 2rem 1rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form .search-input {
+  margin-bottom: 1rem;
+}
+
+.contact-form textarea {
+  padding-bottom: 5rem;
+}
+
+.hero-img {
+  background-image: url(/assets/img/main/property-cards/nenenan-3.jpg);
+}
+/*# sourceMappingURL=ad-signup.css.map */

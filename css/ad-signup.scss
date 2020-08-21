@@ -1,0 +1,22 @@
+.contact-form-wrapper{
+   padding: 2rem 1rem 1rem;
+   margin-bottom: 2rem;
+}
+
+.contact-form{
+
+   display: flex;
+   flex-direction: column;
+
+   .search-input{
+      margin-bottom: 1rem;
+   }
+
+   textarea{
+      padding-bottom: 5rem;
+   }
+}
+
+.hero-img{
+   background-image: url(/assets/img/main/property-cards/nenenan-3.jpg);
+}
